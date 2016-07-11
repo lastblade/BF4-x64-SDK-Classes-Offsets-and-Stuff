@@ -1,0 +1,3415 @@
+// Generated using ReClass 2015
+
+
+
+class OFFSET_MAIN;
+class Main;
+class ServerJobData;
+class Offset_ClientGameContext;
+class ClientGameContext;
+class GameContext;
+class ClientPlayerManager;
+class ClientPlayer;
+class Player;
+class ClientSoldierEntity;
+class BFClientSoldierHealthComponent;
+class ClientControllableEntity;
+class UIEntities;
+class ClientCharacterEntity;
+class CharacterPhysicsEntity;
+class ClientAntAnimatableComponent;
+class SoldierEntity;
+class ClientSoldierPrediction;
+class ClientHavanaSoldierWeaponsComponent;
+class CameraCallbacks;
+class ClientAnimatedSoldierWeaponHandler;
+class SoldierAimingEnvironment;
+class ClientSoldierWeapon;
+class OFFSET_CLIENTSOLDIERWEAPON;
+class ClientSoldierAimingSimulation;
+class SoldierAimingSimulationData;
+class AimingPoseData;
+class FPSAimer;
+class WeaponFiring;
+class WeaponSwayData;
+class GunSwayData;
+class WeaponFiringData;
+class FiringFunctionData;
+class WeaponDispersion;
+class FiringDispersionData;
+class ShotConfigData;
+class OverHeatData;
+class FireLogicData;
+class HoldAndReleaseData;
+class BoltActionData;
+class RecoilData;
+class AmmoConfigData;
+class BulletEntityData;
+class MeshProjectileEntityData;
+class ProjectileEntityData;
+class WeaponSuppressionData;
+class SoldierEntityData;
+class ControllableEntityData;
+class CharacterEntityData;
+class ClientRagdollComponent;
+class QuatTransform;
+class ClientSoldierBreathComponent;
+class ClientLevel;
+class LevelData;
+class WorldData;
+class CompnentsList;
+class LevelSetupOption;
+class HavokPhysicsManager;
+class BorderInputNode;
+class Keyboard;
+class OFFSET_BORDERINPUTNODE;
+class InputCache;
+class ClientSettings;
+class SystemSettings;
+class OFFSET_SYNCEDBFSETTINGS;
+class SyncedBFSettings;
+class OFFSET_WORLDRENDERSETTINGS;
+class WorldRenderSettings;
+class TopSecretInfo;
+class ClientConnection;
+class ClientConnection;
+class ConnectionStats;
+class ClientDamageStream;
+class OFFSET_DXRENDERER;
+class DxRenderer;
+class Screen;
+class RenderScreenInfo;
+class OFFSET_GAMERENDERER;
+class GameRenderer;
+class GameRenderViewParams;
+class RenderView;
+class RenderViewDesc;
+class Frustum;
+class AxisAlignedBox;
+class GameRenderSettings;
+class DxDisplaySettings;
+class SkeletonAsset;
+class StringList;
+class GameAnimatable;
+class ClientGameView;
+class FreeCamera;
+class ClientVehicleEntity;
+class ClientVehicleBouncePhysicsComponent;
+class VehicleBouncePhysicsComponentData;
+class HealthComponent;
+class ClientChassisComponent;
+class ClientPartComponent;
+class VehicleComponentData;
+class VehicleConfigData;
+class AeroDynamicPhysics;
+class MotorbikeData;
+class N015B075E;
+class N015CBF0A;
+class N015CCF11;
+class N016FEB31;
+class N0170AF55;
+class N01D3AA5B;
+class N01DB97B1;
+class CHlarge;
+class N01EE3B37;
+class N01EEB61F;
+class N01F0E5EA;
+class Railgun;
+class N059DFFE8;
+class N05A0278C;
+class items;
+class N05A54F15;
+class N05A697C5;
+class N05A71EDA;
+class N00BDAEEE;
+class N00C17146;
+class N00C1A30E;
+class N00C20BE5;
+class N0120B50A;
+class N01220BBB;
+class Angles;
+class WeaponFiring;
+class N0000278F;
+class N000027B2;
+class N000027B7;
+class N00002C1B;
+class N00002C37;
+class N00002C51;
+class PhysicsEntityBase;
+class ClientReplication;
+class N00002C66;
+class N00002C7B;
+class N00002C8E;
+class N00002CA3;
+class N00002CD5;
+class N00002CEB;
+class N00002D09;
+class N00002D2F;
+class N00002E04;
+class N00002E10;
+class N00002E66;
+class N00002E9B;
+class N00002EA6;
+class N00002EDE;
+class N00002EE9;
+class N00002E65;
+class N00002E7B;
+class N00002EC8;
+class N00002ED3;
+class ClientVaultComponent;
+class CameraRecoilData;
+class N00002FF7;
+class N00003002;
+class ClientSoldierAimingSimulation;
+class fpsAimer;
+class N00002FEB;
+class N00003015;
+class ClientWeapon;
+class N0000304B;
+class N00003030;
+class N00003033;
+class N00003036;
+class N00003041;
+class N00003044;
+class N00003067;
+class DynamicPhysicsEntity;
+class VehicleEntityData;
+class DynamicPhysicsEntity;
+class N000030E9;
+class N00003106;
+class N0000311A;
+class VaultComponentData;
+class ClientPlayerEntryComponent;
+class ClientVehicleHealthComponent;
+class N000031F5;
+class N000031FA;
+class m_PlayerView;
+class N0000321F;
+class N0000323A;
+class N0000328A;
+class N0000328D;
+class N00003290;
+class N000032A7;
+class fb::WeaponEntityData;
+class N000032D0;
+class N000032DC;
+class RumbleFiringData;
+class PlayerEntryComponentData;
+class N000033A7;
+class N000033BA;
+class USLARGE;
+class US-Support;
+class N0000342B;
+class N00003436;
+class N000037C1;
+class N000037DC;
+class N000037FF;
+class N00003832;
+class N00003835;
+class N00003B00;
+class N00003B13;
+class N00003CA6;
+class N00003CC1;
+class N000047FC;
+class N00004820;
+class CH LARGE;
+class N0000485E;
+class N00004871;
+class N0000490C;
+class N0000498F;
+class N00004992;
+class N0000501D;
+class N00005028;
+class N0000502B;
+class N0000503E;
+class N00005051;
+class N0000506C;
+class N00005087;
+class N0000509A;
+class N000050AD;
+class N000050C0;
+class N000050E1;
+class N000050E6;
+class N000050E9;
+class N00005124;
+class N0000513F;
+class N00005152;
+class N00005165;
+class N000054FD;
+class N00005508;
+class N0000551B;
+class N0000552E;
+class N00005551;
+class N0000555C;
+class GameAIWeaponData;
+class N0000556C;
+class N000055E5;
+class PhysicsEntityTransform;
+class VehicleHealthZoneData;
+class N000056CD;
+class N000056DA;
+class N000056DD;
+class N000056E0;
+class N000056E3;
+class OFFSET_CURRENT_WEAPONFIRING;
+class N0000570F;
+class N0000578C;
+class N0000579F;
+
+class OFFSET_MAIN
+{
+public:
+	Main* lpMain; //0x0000  
+
+};//Size=0x0008
+
+class Main
+{
+public:
+	char pad_0x0000[0x24]; //0x0000
+	BYTE m_IsDedicatedServer; //0x0024 
+	BYTE m_IsDedicatedServerData; //0x0025 
+	BYTE m_IsPaused; //0x0026 
+	char pad_0x0027[0x25]; //0x0027
+	 m_pServer; //0x004C 
+	ClientGameContext* m_pClient; //0x0054 
+	 m_pFileSystem; //0x005C 
+	 m_pSimulationGameTimer; //0x0064 
+	 m_pUIGameTimer; //0x006C 
+char pad_0x0074[0x50]; //0x0074
+
+};//Size=0x00C4
+
+class ServerJobData
+{
+public:
+	 N21F243A8; //0x0000 
+	char pad_0x0008[0x48]; //0x0008
+	 N21F2B083; //0x0050 
+char pad_0x0058[0x38]; //0x0058
+
+};//Size=0x0090
+
+class Offset_ClientGameContext
+{
+public:
+	char pad_0x0000[0x48]; //0x0000
+	ClientGameContext* m_pGameContext; //0x0048 
+	ClientSettings* m_pClientSettings; //0x0050 
+	char pad_0x0058[0x8]; //0x0058
+	ClientPlayerManager* m_pClientPlayerManager; //0x0060 
+	N0000556C* N21F37ED1; //0x0068 
+	ClientGameView* m_pGameView; //0x0070 
+	 m_pFileSystem; //0x0078 
+	 m_pGameTime; //0x0080 
+	BorderInputNode* m_pBorderInputNode; //0x0088 
+	char pad_0x0090[0x10]; //0x0090
+	 m_pUISystem; //0x00A0 
+	__int32 m_UISystemType; //0x00A8 
+	char pad_0x00AC[0x25C]; //0x00AC
+	__int32 m_ClientState; //0x0308 
+
+};//Size=0x030C
+
+class ClientGameContext
+{
+public:
+	GameContext* GameContext; //0x0000 
+	char pad_0x0008[0x58]; //0x0008
+	N0120B50A* m_pClientPlayerManager; //0x0060 
+	TopSecretInfo* m_pOnlineManager; //0x0068 
+	 m_pGameView; //0x0070 
+char pad_0x0078[0x30]; //0x0078
+
+};//Size=0x00A8
+
+class GameContext
+{
+public:
+	char pad_0x0000[0x20]; //0x0000
+	ClientPlayerManager* m_pPlayerManager; //0x0020 
+	 m_pGameTime; //0x0028 
+	ClientLevel* m_pLevel; //0x0030 
+	 m_pMaterialGridManager; //0x0038 
+	 m_pAnimationManager; //0x0040 
+char pad_0x0048[0x18]; //0x0048
+
+};//Size=0x0060
+
+class ClientPlayerManager
+{
+public:
+	char pad_0x0000[0x8]; //0x0000
+	 m_pPlayerData; //0x0008 
+	__int32 m_MaxPlayerCount; //0x0010 
+	__int32 m_PlayerCountBitCount; //0x0014 
+	__int32 m_PlayerIdBitCount; //0x0018 
+	char pad_0x001C[0x524]; //0x001C
+	ClientPlayer* m_pLocalPlayer; //0x0540 
+	ClientPlayer* m_ppPlayers; //0x0548 
+	char pad_0x0550[0x8]; //0x0550
+	 m_pNetworkablePlayers; //0x0558 
+char pad_0x0560[0x190]; //0x0560
+
+};//Size=0x06F0
+
+class ClientPlayer : public Player
+{
+public:
+	char pad_0x0CCC[0x8]; //0x0CCC
+	BYTE N2202723A; //0x0CD4 
+	char pad_0x0CD5[0x4]; //0x0CD5
+	BYTE N00002D57; //0x0CD9 
+	char pad_0x0CDA[0x2]; //0x0CDA
+	__int32 N2202723B; //0x0CDC 
+	char pad_0x0CE0[0x6CD]; //0x0CE0
+	BYTE N00002B5F; //0x13AD 
+	char pad_0x13AE[0x2]; //0x13AE
+	BYTE N00002B4D; //0x13B0 
+	char pad_0x13B1[0x13]; //0x13B1
+	BYTE N00003020; //0x13C4 
+	BYTE N00003218; //0x13C5 
+	BYTE N0000321B; //0x13C6 
+	BYTE N00003219; //0x13C7 
+	BYTE N00002B4E; //0x13C8 
+	BYTE m_isSpectator; //0x13C9 
+	BYTE N00002B62; //0x13CA 
+	BYTE N000055A9; //0x13CB 
+	BYTE m_TeamId; //0x13CC 
+	BYTE N000055AA; //0x13CD 
+	char pad_0x13CE[0xE1]; //0x13CE
+	BYTE N00003071; //0x14AF 
+	ClientCharacterEntity* N000031F1; //0x14B0 
+	char pad_0x14B8[0x8]; //0x14B8
+	ClientVehicleEntity* m_pAttachedControllable; //0x14C0 
+	DWORD m_attachedEntryId; //0x14C8 
+	char pad_0x14CC[0x4]; //0x14CC
+	ClientSoldierEntity* m_pControlledControllable; //0x14D0 
+	char pad_0x14D8[0x38]; //0x14D8
+	N000031FA* m_ownPlayerView; //0x1510 
+	char pad_0x1518[0x8]; //0x1518
+	m_PlayerView* m_PlayerView; //0x1520 
+char pad_0x1528[0x358]; //0x1528
+
+};//Size=0x1880
+
+class Player
+{
+public:
+	char pad_0x0000[0x8]; //0x0000
+	N00002D09* m_pPlayerData; //0x0008 
+	char pad_0x0010[0x8]; //0x0010
+	 m_pLocalName; //0x0018 
+	char pad_0x0020[0x20]; //0x0020
+	wchar_t szName[10]; //0x0040 
+	char pad_0x0054[0x1FD]; //0x0054
+	 m_pCustomizationAsset; //0x0251 fb::VeniceSoldierCustomizationAsset*
+	char pad_0x0259[0x2E0]; //0x0259
+	BYTE N22052FB8; //0x0539 
+	char pad_0x053A[0x6]; //0x053A
+	BYTE N00002FF5; //0x0540 
+	char pad_0x0541[0x18]; //0x0541
+	BYTE N2205327A; //0x0559 
+	char pad_0x055A[0x6]; //0x055A
+	BYTE N00003000; //0x0560 
+	char pad_0x0561[0x3E0]; //0x0561
+	DWORD N220532F7; //0x0941 
+	BYTE N00005709; //0x0945 
+	char pad_0x0946[0x2]; //0x0946
+	N0000570F* m_selectedCustomizationAsset; //0x0948 
+	char pad_0x0950[0x289]; //0x0950
+	BYTE N22053474; //0x0BD9 
+	char pad_0x0BDA[0x6]; //0x0BDA
+	N00002C66* N00002C64; //0x0BE0 
+	char pad_0x0BE8[0xE0]; //0x0BE8
+	__int32 m_TeamId; //0x0CC8 
+
+};//Size=0x0CCC
+
+class ClientSoldierEntity : public ClientControllableEntity
+{
+public:
+	ClientCharacterEntity ClientCharacterEntity; //0x0188 
+	SoldierEntity SoldierEntity; //0x0288 
+	char pad_0x0430[0x60]; //0x0430
+	ClientSoldierPrediction* ClientReplication; //0x0490 
+	char pad_0x0498[0x40]; //0x0498
+	D3DXVECTOR2 m_ViewAngles; //0x04D8 
+	char pad_0x04E0[0x8]; //0x04E0
+	 m_pSoldierSound; //0x04E8 
+	__int32 m_Pose; //0x04F0 
+	__int32 m_RenderFlags; //0x04F4  4 = no weapon render | 6 = no player render
+	char pad_0x04F8[0x78]; //0x04F8
+	ClientHavanaSoldierWeaponsComponent* m_pSoldierWeaponsComponent; //0x0570 
+	 m_pBodyComponent; //0x0578 
+	ClientRagdollComponent* m_pRagdollComponent; //0x0580 
+	ClientSoldierBreathComponent* m_pBreathControlComponent; //0x0588 
+	 m_pVehicleListenerComponent; //0x0590 
+	char pad_0x0598[0x8]; //0x0598
+	 m_pSprintInputHandler; //0x05A0 check*
+	char pad_0x05A8[0x4]; //0x05A8
+	float m_LastSprinted; //0x05AC 
+	BYTE m_Sprinting; //0x05B0 
+	BYTE m_Occluded; //0x05B1 
+	char pad_0x05B2[0x63E]; //0x05B2
+	N00002C7B* m_pParachuteComponent; //0x0BF0 
+	char pad_0x0BF8[0x78]; //0x0BF8
+	N00002C8E* m_pSpottingComponent; //0x0C70 
+	char pad_0x0C78[0xB8]; //0x0C78
+	ClientVaultComponent* ClientVaultComponent; //0x0D30 
+char pad_0x0D38[0xE8]; //0x0D38
+
+};//Size=0x0E20
+
+class BFClientSoldierHealthComponent
+{
+public:
+	char pad_0x0000[0x20]; //0x0000
+	float m_Health; //0x0020 
+	float m_MaxHealth; //0x0024 
+	char pad_0x0028[0x10]; //0x0028
+	float m_VehicleHealth; //0x0038 
+	char pad_0x003C[0xB4]; //0x003C
+	 N22C12F99; //0x00F0 
+	 N22C12F9A; //0x00F8 
+char pad_0x0100[0x10]; //0x0100
+
+};//Size=0x0110
+
+class ClientControllableEntity
+{
+public:
+	char pad_0x0000[0x1A]; //0x0000
+	BYTE m_OcclusionFlags; //0x001A 10101111 
+	char pad_0x001B[0x15]; //0x001B
+	SoldierEntityData* m_pData; //0x0030 
+	 m_pComponents; //0x0038 
+	char pad_0x0040[0xC8]; //0x0040
+	UIEntities* m_pUIEntities; //0x0108 
+	char pad_0x0110[0x20]; //0x0110
+	 m_pSpawnEntity; //0x0130 
+	char pad_0x0138[0x8]; //0x0138
+	BFClientSoldierHealthComponent* m_pHealthComponent; //0x0140 
+	 m_pSoldierPhysicsComponent; //0x0148 
+char pad_0x0150[0x38]; //0x0150
+
+};//Size=0x0188
+
+class UIEntities
+{
+public:
+	char pad_0x0000[0x78]; //0x0000
+	 m_pUIElementWidgetReferenceData; //0x0078 
+	 m_pUIScoringWidgetData; //0x0080 
+	char pad_0x0088[0x8]; //0x0088
+	 m_pClientUIScreenRenderEntity; //0x0090 
+	char pad_0x0098[0xA8]; //0x0098
+	 m_pUIStatusUpdateWidgetData; //0x0140 
+	char pad_0x0148[0x28]; //0x0148
+	 m_pUIHudBackgroundData; //0x0170 
+
+};//Size=0x0178
+
+class ClientCharacterEntity
+{
+public:
+	char pad_0x0000[0x28]; //0x0000
+	CharacterPhysicsEntity* m_pPhysicsEntity; //0x0028 
+	char pad_0x0030[0x18]; //0x0030
+	ClientAntAnimatableComponent* m_pAnimatableComponent; //0x0048 
+	 m_pAnimatableComponent; //0x0050 
+	 m_pCameraComponent; //0x0058 VeniceClientSoldierCameraComponent* 
+	char pad_0x0060[0x28]; //0x0060
+	 m_pSoldierBlueprint; //0x0088 
+char pad_0x0090[0x70]; //0x0090
+
+};//Size=0x0100
+
+class CharacterPhysicsEntity
+{
+public:
+	char pad_0x0000[0x70]; //0x0000
+	PhysicsEntityBase* PhysicsEntityBase; //0x0070 
+
+};//Size=0x0078
+
+class ClientAntAnimatableComponent
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	 m_pAnimatableData; //0x0010 
+	char pad_0x0018[0x8]; //0x0018
+	 m_pEntry; //0x0020 
+	char pad_0x0028[0x40]; //0x0028
+	GameAnimatable* m_pGameAnimatable; //0x0068  todo: check 
+	char pad_0x0070[0xB8]; //0x0070
+	 m_pAnimatable; //0x0128 
+	char pad_0x0130[0x418]; //0x0130
+	SkeletonAsset* m_pSkeletonAsset; //0x0548 
+
+};//Size=0x0550
+
+class SoldierEntity
+{
+public:
+	char pad_0x0000[0x8]; //0x0000
+	 m_pSoldierData; //0x0008 
+	char pad_0x0010[0x28]; //0x0010
+	float N22FADE1C; //0x0038 
+	char pad_0x003C[0x7C]; //0x003C
+	float N22FBE496; //0x00B8 
+	char pad_0x00BC[0x4]; //0x00BC
+	float N22FBE736; //0x00C0 
+	char pad_0x00C4[0x34]; //0x00C4
+	 m_pBoneCollisionComponent; //0x00F8 
+	float m_MoveSpeedMultiplier; //0x0100 
+	float m_SprintSpeedMultiplier; //0x0104 
+	float m_JumpHeightMultiplier; //0x0108 
+	float m_LookSpeedMultiplier; //0x010C 
+	float N22FDC03C; //0x0110 
+	char pad_0x0114[0xC]; //0x0114
+	 m_pCharacterEntity; //0x0120 
+char pad_0x0128[0x80]; //0x0128
+
+};//Size=0x01A8
+
+class ClientSoldierPrediction
+{
+public:
+	char pad_0x0000[0x30]; //0x0000
+	D3DXVECTOR4 m_Position; //0x0030 
+	char pad_0x0040[0x10]; //0x0040
+	D3DXVECTOR4 m_Velocity; //0x0050 
+char pad_0x0060[0x70]; //0x0060
+
+};//Size=0x00D0
+
+class ClientHavanaSoldierWeaponsComponent
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	 m_pWeaponsComponentData; //0x0010 SoldierWeaponsComponentData*
+	char pad_0x0018[0x8]; //0x0018
+	 m_pEntry; //0x0020 
+	char pad_0x0028[0x18]; //0x0028
+	CameraCallbacks* m_pCameraCallbacks; //0x0040 
+	char pad_0x0048[0xA8]; //0x0048
+	DirectX::XMMATRIX m_Transform; //0x00F0 
+	char pad_0x0130[0x760]; //0x0130
+	ClientAnimatedSoldierWeaponHandler* N2318E948; //0x0890 
+	char pad_0x0898[0xA8]; //0x0898
+	ClientAnimatedSoldierWeaponHandler* m_pHandler; //0x0940 
+	char pad_0x0948[0x20]; //0x0948
+	 m_pAnimatableComponent; //0x0968 
+	 m_pAnimatableComponent; //0x0970 
+	 m_pOwner; //0x0978 fb::ClientSoldierEntity*
+	char pad_0x0980[0x118]; //0x0980
+	BYTE cActiveSlot; //0x0A98 
+	char pad_0x0A99[0xD7]; //0x0A99
+	__int32 m_WeaponCurrentWeaponIndex; //0x0B70 
+	__int32 m_WeaponLastWeaponIndex; //0x0B74 
+	__int32 m_WeaponLastPrimary; //0x0B78 
+	char pad_0x0B7C[0x1C]; //0x0B7C
+	__int32 m_CurrentZoomLevel; //0x0B98 
+	__int32 m_ZoomLevelMax; //0x0B9C 
+	__int32 m_ZeroingDistanceLevel; //0x0BA0 
+	char pad_0x0BA4[0x44]; //0x0BA4
+	 m_pWeaponAsset; //0x0BE8 [8]
+	 m_pWeaponAsset; //0x0BF0 
+	 m_pWeaponAsset; //0x0BF8 
+	 m_pWeaponAsset; //0x0C00 
+	 m_pWeaponAsset; //0x0C08 
+	 m_pWeaponAsset; //0x0C10 
+	 m_pWeaponAsset; //0x0C18 
+	 m_pWeaponAsset; //0x0C20 
+	char pad_0x0C28[0x270]; //0x0C28
+	SoldierAimingEnvironment* m_pAimingEnvironment; //0x0E98 to fb::WeaponFiringData* 
+	char pad_0x0EA0[0x18]; //0x0EA0
+	float m_TimeSinceFire; //0x0EB8 
+char pad_0x0EBC[0x4]; //0x0EBC
+
+};//Size=0x0EC0
+
+class CameraCallbacks
+{
+public:
+	char pad_0x0000[0xE8]; //0x0000
+	 m_pVeniceFPSCamera; //0x00E8 
+	 m_pCSECameraCallback; //0x00F0 
+	char pad_0x00F8[0x8]; //0x00F8
+	 m_pChaseCamera; //0x0100 
+	 m_pCSECameraCallback; //0x0108 
+	char pad_0x0110[0x8]; //0x0110
+	 m_pChaseCamera; //0x0118 
+	 m_pCameraCallback; //0x0120 
+
+};//Size=0x0128
+
+class ClientAnimatedSoldierWeaponHandler
+{
+public:
+	ClientSoldierWeapon* m_pWeaponList; //0x0000 fb::ClientSoldierWeapon[8]
+	 m_pWeaponList; //0x0008 
+	 m_pWeaponList; //0x0010 
+	 m_pWeaponList; //0x0018 
+	 m_pWeaponList; //0x0020 
+	 m_pWeaponList; //0x0028 
+	 m_pWeaponList; //0x0030 
+	 m_pWeaponList; //0x0038 
+
+};//Size=0x0040
+
+class SoldierAimingEnvironment
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	 m_pWeaponFiringData; //0x0010 
+	char pad_0x0018[0x10]; //0x0018
+	 m_pAimingSimulationData; //0x0028 
+char pad_0x0030[0x18]; //0x0030
+
+};//Size=0x0048
+
+class ClientSoldierWeapon
+{
+public:
+	char pad_0x0000[0x30]; //0x0000
+	 m_pWeaponData; //0x0030 
+	char pad_0x0038[0x47B8]; //0x0038
+	 m_pWeaponZoomLevelData; //0x47F0 fb::WeaponZoomLevelData[2]
+	 m_pWeaponZoomLevelData; //0x47F8 
+	char pad_0x4800[0x70]; //0x4800
+	 m_pWeaponFiringEffectsModifier; //0x4870 fb::WeaponFiringEffectsModifier*
+	char pad_0x4878[0x48]; //0x4878
+	 m_pWeaponAimingSimulationModifier; //0x48C0 
+	char pad_0x48C8[0x8]; //0x48C8
+	 m_pWeaponAnimTypeModifier; //0x48D0 
+	char pad_0x48D8[0x38]; //0x48D8
+	 m_pWeaponZoomLevelModifier; //0x4910 fb::WeaponZoomLevelModifier[2]
+	 m_pWeaponZoomLevelModifier; //0x4918 
+	char pad_0x4920[0x38]; //0x4920
+	 m_pZoomLevelData; //0x4958 fb::ZoomLevelData[2]
+	 m_pZoomLevelData; //0x4960 
+	char pad_0x4968[0x20]; //0x4968
+	ClientSoldierAimingSimulation* m_pAimingSimulation; //0x4988 For Aimbot
+	char pad_0x4990[0x18]; //0x4990
+	 m_pClientWeapon; //0x49A8 
+	char pad_0x49B0[0x18]; //0x49B0
+	WeaponFiring* m_pPrimaryFire; //0x49C8 
+char pad_0x49D0[0x58]; //0x49D0
+
+};//Size=0x4A28
+
+class OFFSET_CLIENTSOLDIERWEAPON
+{
+public:
+	ClientSoldierWeapon* lpSoldierWeapon; //0x0000 
+
+};//Size=0x0008
+
+class ClientSoldierAimingSimulation
+{
+public:
+	SoldierAimingSimulationData* m_pData; //0x0000 
+	char pad_0x0008[0x8]; //0x0008
+	FPSAimer* m_pFPSAimer; //0x0010 
+	float m_Yaw; //0x0018 
+	float m_Pitch; //0x001C 
+	float m_AimYawTimer; //0x0020 
+	float m_AimPitchTimer; //0x0024 
+	D3DXVECTOR2 m_Sway; //0x0028 
+	float m_DeltaTime; //0x0030 
+	char pad_0x0034[0x8]; //0x0034
+	D3DXVECTOR2 m_ViewDelta; //0x003C 
+	char pad_0x0044[0x2C]; //0x0044
+	DirectX::XMMATRIX m_Transform; //0x0070 
+	D3DXVECTOR4 m_Position; //0x00B0 
+	D3DXVECTOR4 m_View; //0x00C0 
+	D3DXVECTOR4 m_Velocity; //0x00D0 
+	char pad_0x00E0[0x58]; //0x00E0
+	float m_FOV; //0x0138 check
+	char pad_0x013C[0x1C]; //0x013C
+	 m_pRayResult; //0x0158 
+	D3DXVECTOR4 m_RayEnd; //0x0160 
+	__int32 m_RayMaximumLength; //0x0170 
+char pad_0x0174[0x3C]; //0x0174
+
+};//Size=0x01B0
+
+class SoldierAimingSimulationData
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	 m_ppZoomLevels; //0x0010 
+	 m_pAimAssist; //0x0018 
+	AimingPoseData m_StandPose; //0x0020 
+	AimingPoseData m_CrouchPose; //0x0038 
+	AimingPoseData m_PronePose; //0x0050 
+	float m_ZoomTransitionTime; //0x0068 
+	char pad_0x006C[0x4]; //0x006C
+	 m_ZoomTransitionTimeArray; //0x0070 Float**
+	float m_FovDelayTime; //0x0078 
+	float m_FovTransitionTime; //0x007C 
+	float m_AimingRange; //0x0080 
+	float m_LockAimToTargetSpeed; //0x0084 
+
+};//Size=0x0088
+
+class AimingPoseData
+{
+public:
+	float m_MinimumPitch; //0x0000 
+	float m_MaximumPitch; //0x0004 
+	float m_TargetingFov; //0x0008 
+	float m_AimSteadiness; //0x000C 
+	float m_SpeedMultiplier; //0x0010 
+	float m_RecoilMultiplier; //0x0014 
+
+};//Size=0x0018
+
+class FPSAimer
+{
+public:
+	 m_pAimAssistData; //0x0000 
+	char pad_0x0008[0xC]; //0x0008
+	D3DXVECTOR2 m_AuthoratativeViewAngles; //0x0014 
+
+};//Size=0x001C
+
+class WeaponFiring
+{
+public:
+	char pad_0x0000[0x78]; //0x0000
+	WeaponSwayData* m_pSway; //0x0078 
+	char pad_0x0080[0x18]; //0x0080
+	 m_pShaderParam; //0x0098 fb::ShaderParameterEntityData*
+	char pad_0x00A0[0x88]; //0x00A0
+	WeaponFiringData* m_pWeaponFiringData; //0x0128 
+	char pad_0x0130[0x18]; //0x0130
+	__int32 m_WeaponState; //0x0148 
+	__int32 m_LastWeaponState; //0x014C 
+	__int32 m_NextWeaponState; //0x0150 
+	char pad_0x0154[0x8]; //0x0154
+	float m_TimeToWait; //0x015C 
+	float m_ReloadTimer; //0x0160 
+	float m_HoldReleaseMinDelay; //0x0164 
+	float m_RecoilTimer; //0x0168 
+	float m_RecoilAngleX; //0x016C 
+	float m_RecoilAngleY; //0x0170 
+	float m_RecoilAngleZ; //0x0174 
+	float m_RecoilFovAngle; //0x0178 
+	float m_RecoilTimeMultiplier; //0x017C 
+	float m_OverheatDropMultiplier; //0x0180 
+	float N234366AE; //0x0184 
+	float N23460EA3; //0x0188 
+	float N234366AF; //0x018C 
+	float N23460EA5; //0x0190 
+	char pad_0x0194[0x14]; //0x0194
+	__int32 m_ProjectilesLoaded; //0x01A8 
+	__int32 m_ProjectilesInMagazines; //0x01AC 
+	char pad_0x01B0[0x10]; //0x01B0
+	DWORD m_TickCounter; //0x01C0 
+	char pad_0x01C4[0xC]; //0x01C4
+	 m_pFiringHoldingData; //0x01D0 fb::SoldierWeaponData*
+char pad_0x01D8[0x140]; //0x01D8
+
+};//Size=0x0318
+
+class WeaponSwayData
+{
+public:
+	char pad_0x0000[0x8]; //0x0000
+	GunSwayData* m_pSwayData; //0x0008 
+	char pad_0x0010[0x1F4]; //0x0010
+	BYTE N0000319B; //0x0204 
+char pad_0x0205[0x277]; //0x0205
+
+};//Size=0x047C
+
+class GunSwayData
+{
+public:
+	char pad_0x0000[0x1C0]; //0x0000
+	float N234B3096; //0x01C0 
+	float N00002FCE; //0x01C4 
+	float N234B3097; //0x01C8 
+	float N00002FD0; //0x01CC 
+	char pad_0x01D0[0x8]; //0x01D0
+	float N234B3099; //0x01D8 
+	float N00002FD3; //0x01DC 
+	char pad_0x01E0[0x80]; //0x01E0
+	float N234B3414; //0x0260 
+	float N00002FD7; //0x0264 
+	char pad_0x0268[0x8]; //0x0268
+	float N234B3416; //0x0270 
+	float N00002FDA; //0x0274 
+	char pad_0x0278[0x100]; //0x0278
+	 m_pCameraRecoilData; //0x0378 
+	char pad_0x0380[0xB0]; //0x0380
+	float m_DeviationScaleFactorZoom; //0x0430 
+	float m_GameplayDeviationScaleFactorZoom; //0x0434 
+	float m_DeviationScaleFactorNoZoom; //0x0438 
+	float m_GameplayDeviationScaleFactorNoZoom; //0x043C 
+	float m_ShootingRecoilDecreaseScale; //0x0440 
+	float m_FirstShotRecoilMultiplier; //0x0444 
+	CameraRecoilData* CameraRecoilData; //0x0448 
+char pad_0x0450[0x30]; //0x0450
+
+};//Size=0x0480
+
+class WeaponFiringData
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	FiringFunctionData* m_PrimaryFire; //0x0010 
+	float m_DeployTime; //0x0018 
+	float m_ReactiveCooldownTime; //0x001C 
+	float m_DisableZoomOnDeployTime; //0x0020 
+	float m_AltDeployTime; //0x0024 
+	__int32 m_AltDeployId; //0x0028 
+	char pad_0x002C[0x4]; //0x002C
+	WeaponSwayData* m_WeaponSway; //0x0030 
+	RumbleFiringData* m_Rumble; //0x0038 
+	DWORD N234BF486; //0x0040 
+	float m_SupportDelayStand; //0x0044 
+	float m_SupportDelayProne; //0x0048 
+	BYTE m_UseAutoAiming; //0x004C 
+	BYTE m_InflictSelfDamage; //0x004D 
+	BYTE m_ShowEnemyNametagOnAim; //0x004E 
+	BYTE m_ReloadWholeMags; //0x004F 
+	BYTE m_DisableReloadWhileSprinting; //0x0050 
+	BYTE m_AbortReloadOnSprint; //0x0051 
+char pad_0x0052[0x46]; //0x0052
+
+};//Size=0x0098
+
+class FiringFunctionData
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	 m_Dispersion; //0x0010 
+	WeaponDispersion m_WeaponDispersion; //0x0018 
+	ShotConfigData m_Shot; //0x0060 
+	OverHeatData m_OverHeat; //0x00F0 
+	 m_pFireEffects1p; //0x0150 
+	 m_pFireEffects3p; //0x0158 
+	 m_pSound; //0x0160 fb::SoundPatchConfigurationAsset*
+	FireLogicData m_FireLogic; //0x0168 
+	AmmoConfigData m_Ammo; //0x0220 
+	float m_SelfHealTimeWhenDeployed; //0x0244 
+	BYTE m_UsePrimaryAmmo; //0x0248 
+	BYTE m_UnlimitedAmmoForAI; //0x0249 
+char pad_0x024A[0xE]; //0x024A
+
+};//Size=0x0258
+
+class WeaponDispersion : public FiringDispersionData
+{
+public:
+	FiringDispersionData m_CrouchDispersion; //0x0010 
+	FiringDispersionData m_ProneDispersion; //0x0020 
+	float m_JumpDispersionAngle; //0x0030 
+char pad_0x0034[0x14]; //0x0034
+
+};//Size=0x0048
+
+class FiringDispersionData
+{
+public:
+	float m_MinAngle; //0x0000 
+	float m_MaxAngle; //0x0004 
+	float m_IncreasePerShot; //0x0008 
+	float m_DecreasePerSecond; //0x000C 
+
+};//Size=0x0010
+
+class ShotConfigData
+{
+public:
+	D3DXVECTOR4 m_InitialPosition; //0x0000 
+	D3DXVECTOR4 m_InitialDirection; //0x0010 
+	D3DXVECTOR3 m_InitialSpeed; //0x0020 
+	char pad_0x002C[0x14]; //0x002C
+	float m_InheritWeaponSpeedAmount; //0x0040 
+	char pad_0x0044[0x4]; //0x0044
+	 m_pMuzzleExplosion; //0x0048 
+	BulletEntityData* m_pProjectileData; //0x0050 
+	 m_pSecondaryProjectileData; //0x0058 
+	 m_pProjectile; //0x0060 fb::ProjectileBlueprint*
+	 m_pSecondaryProjectile; //0x0068 
+	float m_SpawnDelay; //0x0070 
+	float m_QuickSwitchFireDelay; //0x0074 
+	__int32 m_NumberOfBulletsPerShell; //0x0078 
+	__int32 m_NumberOfBulletsPerShot; //0x007C 
+	__int32 m_NumberOfBulletsPerBurst; //0x0080 
+	BYTE m_RelativeTargetAiming; //0x0084 
+	BYTE m_ForceSpawnToCamera; //0x0085 
+	BYTE m_SpawnVisualAtWeaponBone; //0x0086 
+	BYTE m_ActiveForceSpawnToCamera; //0x0087 
+char pad_0x0088[0x8]; //0x0088
+
+};//Size=0x0090
+
+class OverHeatData
+{
+public:
+	char pad_0x0000[0x4]; //0x0000
+	BYTE m_IsHoming; //0x0004 
+	BYTE m_IsGuided; //0x0005 
+	BYTE m_IsGuidedWhenZoomed; //0x0006 
+	BYTE m_IsGuidedHoming; //0x0007 
+	BYTE m_FireOnlyWhenLockedOn; //0x0008 
+	char pad_0x0009[0x7]; //0x0009
+	float m_X; //0x0010 
+	char pad_0x0014[0x1C]; //0x0014
+	BYTE m_KnockOut; //0x0030 
+	BYTE m_HudeObject; //0x0031 
+	BYTE m_FineBlur; //0x0032 
+	BYTE N0000322B; //0x0033 
+	char pad_0x0034[0x14]; //0x0034
+	float m_HeatPerBullet; //0x0048 
+	float m_HeatDropPerSecond; //0x004C 
+	float m_OverHeatPenaltyTime; //0x0050 
+	float m_OverHeatThreshold; //0x0054 
+	BYTE m_DropheatWhileFiring; //0x0058 
+char pad_0x0059[0x7]; //0x0059
+
+};//Size=0x0060
+
+class FireLogicData : public HoldAndReleaseData
+{
+public:
+	BoltActionData m_BoltAction; //0x001C 
+	RecoilData m_Recoil; //0x002C 
+	char pad_0x003C[0x14]; //0x003C
+	__int32 m_FireInputAction; //0x0050 
+	__int32 m_ReloadInputAction; //0x0054 
+	__int32 m_CycleFireModeInputAction; //0x0058 
+	float m_TriggerPullWeight; //0x005C 
+	float m_RateOfFire; //0x0060 
+	float m_RateOfFireForBurst; //0x0064 
+	float m_DelayBetweenBursts; //0x0068 
+	float m_ClientFireRateMultiplier; //0x006C 
+	float m_ReloadDelay; //0x0070 
+	float m_ReloadTime; //0x0074 
+	 m_ReloadTimerArray; //0x0078 
+	float m_ReloadTimeBulletsLeft; //0x0080 
+	float m_ReloadThreshold; //0x0084 
+	float m_PreFireDelay; //0x0088 
+	float m_PreFireDelayZoomed; //0x008C 
+	float m_PreFireRequireHold; //0x0090 
+	float m_AutomaticDelay; //0x0094 
+	DWORD m_ReloadLogic; //0x0098 
+	DWORD m_ReloadType; //0x009C 
+	__int32 m_FireLogicType; //0x00A0 
+	char pad_0x00A4[0x4]; //0x00A4
+	 m_FireLogicTypeArray; //0x00A8 
+	BYTE m_HoldOffReloadUntilFireRelease; //0x00B0 
+	BYTE m_HoldOffReloadUntilZoomRelease; //0x00B1 
+	BYTE m_ForceReloadActionOnFireTrigger; //0x00B2 
+	BYTE m_AlwaysAutoReload; //0x00B3 
+	BYTE m_ZoomTransitionDisableFire; //0x00B4 
+char pad_0x00B5[0x3]; //0x00B5
+
+};//Size=0x00B8
+
+class HoldAndReleaseData
+{
+public:
+	float m_MaxHoldTime; //0x0000 
+	float m_MinPowerModifier; //0x0004 
+	float m_MaxPowerModifier; //0x0008 
+	float m_PowerIncreasePerSecond; //0x000C 
+char pad_0x0010[0xC]; //0x0010
+
+};//Size=0x001C
+
+class BoltActionData
+{
+public:
+	float m_BoltActionDelay; //0x0000 
+	float m_BoltActionTime; //0x0004 
+	BYTE m_HoldBoltActionUntilFireRelease; //0x0008 
+	BYTE m_HoldBoltActionUntilZoomRelease; //0x0009 
+char pad_0x000A[0x6]; //0x000A
+
+};//Size=0x0010
+
+class RecoilData
+{
+public:
+	float m_MaxRecoilAngleX; //0x0000 
+	float m_MinRecoilAngleX; //0x0004 
+	float m_MaxRecoilAngleY; //0x0008 
+	float m_MinRecoilAngleY; //0x000C 
+
+};//Size=0x0010
+
+class AmmoConfigData
+{
+public:
+	__int32 m_MagazineCapacity; //0x0000 
+	__int32 m_NumberOfMagazines; //0x0004 
+	__int32 m_TraceFrequency; //0x0008 
+	__int32 m_AmmoPickupMinAmount; //0x000C 
+	__int32 m_AmmoPickupMaxAmount; //0x0010 
+	float m_AutoReplenishDelay; //0x0014 
+	float m_AmmoBagPickupDelayMultiplier; //0x0018 
+	__int32 m_AmmoBagPickupAmount; //0x001C 
+	BYTE m_AutoReplenishMagazine; //0x0020 
+char pad_0x0021[0x3]; //0x0021
+
+};//Size=0x0024
+
+class BulletEntityData
+{
+public:
+	char pad_0x0000[0xE]; //0x0000
+	MeshProjectileEntityData MeshProjectileEntityData; //0x000E 
+	 m_pFlyBySound; //0x0120 
+	 m_DudExplosion; //0x0128 
+	float m_Gravity; //0x0130 
+	float m_ImpactImpulse; //0x0134 
+	float m_DetonationTimeVariation; //0x0138 
+	float m_VehicleDetonationRadius; //0x013C 
+	float m_VehicleDetonationActivationDelay; //0x0140 
+	float m_FlyBySoundRadius; //0x0144 
+	float m_FlyBySoundSpeed; //0x0148 
+	float m_Stamina; //0x014C 
+	float m_DistributeDamageOverTime; //0x0150 
+	float m_StartDamage; //0x0154 
+	float m_EndDamage; //0x0158 
+	float m_DamageFalloffStartDistance; //0x015C 
+	float m_DamageFalloffEndDistance; //0x0160 
+	float m_TimeToArmExplosion; //0x0164 
+	float m_FirstFrameTravelDistance; //0x0168 
+	BYTE m_HasVehicleDetonation; //0x016C 
+	BYTE m_InstantHit; //0x016D 
+	BYTE m_StopTrailEffectOnUnspawn; //0x016E 
+char pad_0x016F[0x59]; //0x016F
+
+};//Size=0x01C8
+
+class MeshProjectileEntityData : public ProjectileEntityData
+{
+public:
+	D3DXVECTOR4 m_InitialAngularVelocity; //0x00E2 
+	char pad_0x00F2[0x8]; //0x00F2
+	float m_InstantAttachableTestDistance; //0x00FA 
+	float m_InstantAttachableVisualConvergenceDelay; //0x00FE 
+	float m_InstantAttachableVisualConvergenceDuration; //0x0102 
+	float m_MaxAttachableInclination; //0x0106 
+	float m_UnspawnAfterDetonationDelay; //0x010A 
+	BYTE m_IsAttachable; //0x010E 
+	BYTE m_InstantAttachableTestUnderReticule; //0x010F 
+	BYTE m_ExtraDamping; //0x0110 
+char pad_0x0111[0x1]; //0x0111
+
+};//Size=0x0112
+
+class ProjectileEntityData
+{
+public:
+	char pad_0x0000[0x60]; //0x0000
+	char pad_0x0061[0x2F]; //0x0061
+	float m_InitialSpeed; //0x0090 
+	float m_TimeToLive; //0x0094 
+	__int32 m_MaxCount; //0x0098 
+	float m_InitMeshHideTime; //0x009C 
+	float m_VisualConvergeDistance; //0x00A0 
+	float m_VisualConvergenceDelay; //0x00A4 
+	float m_VisualConvergenceDuration; //0x00A8 
+	float m_ProxyVisualConvergenceDelay; //0x00AC 
+	float m_ProxyVisualConvergenceDuration; //0x00B0 
+	char pad_0x00B4[0x4]; //0x00B4
+	 m_pExplosion; //0x00B8 
+	WeaponSuppressionData* m_pSuppressionData; //0x00C0 
+	char pad_0x00C8[0x7]; //0x00C8
+	char m_AmmunitionType[1]; //0x00CF 
+	__int32 m_MaterialPair; //0x00D0 
+	__int32 m_HitReactionWeaponType; //0x00D4 
+	BYTE m_DetonateOnTimeout; //0x00D8 
+	BYTE m_ServerProjectileDisabled; //0x00D9 
+char pad_0x00DA[0x8]; //0x00DA
+
+};//Size=0x00E2
+
+class WeaponSuppressionData
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	float m_MaxMultiplier; //0x0010 
+	float m_MinMultiplier; //0x0014 
+	float m_MinDistance; //0x0018 
+	float m_MaxDistance; //0x001C 
+
+};//Size=0x0020
+
+class SoldierEntityData : public CharacterEntityData
+{
+public:
+	float m_MaxHealth; //0x00B0 
+	__int32 m_DefaultViewMode; //0x00B4 
+	__int32 m_PlayerSpawnType; //0x00B8 
+	char pad_0x00BC[0x4]; //0x00BC
+	 m_pVoiceOverInfo; //0x00C0 
+	 m_pSound; //0x00C8 
+	BYTE m_CharacterLightingEnabled; //0x00D0 
+	char pad_0x00D1[0xF]; //0x00D1
+	D3DXVECTOR3 m_FLIRKeyColor; //0x00E0 
+	char pad_0x00EC[0x4]; //0x00EC
+	__int32 m_FootMaterialPair; //0x00F0 
+	__int32 m_HeadMaterialPair; //0x00F4 
+	N00002CEB N23C73F85[1]; //0x00F8 
+	char pad_0x0100[0x8]; //0x0100
+	 m_pAimingConstraints; //0x0108 
+	 m_pPhysicsData; //0x0110 
+	 m_pSprintSettings; //0x0118 
+	char pad_0x0120[0x10]; //0x0120
+	 m_pHealthModuleData; //0x0130 
+	char pad_0x0138[0x10]; //0x0138
+	N00002CA3* m_pCollisionData; //0x0148 
+	char pad_0x0150[0x8]; //0x0150
+	float m_FLIRValue; //0x0158 
+	float m_ExplosionDamageModifier; //0x015C 
+	float m_RegenerationDelayModifier; //0x0160 
+	float m_FallDamageThreshold; //0x0164 
+	BYTE m_UseSpineXRotation; //0x0168 
+	BYTE m_ShowWeaponWhenDead; //0x0169 
+	BYTE m_EnableGroundmapLighting; //0x016A 
+	BYTE m_LowerGunOnOwnTeam; //0x016B 
+	BYTE m_ProximityCheck; //0x016C 
+	BYTE m_FreeSpaceCheck; //0x016D 
+	BYTE m_CollisionEnabled; //0x016E 
+	BYTE m_PhysicsControlled; //0x016F 
+	BYTE m_IsPushable; //0x0170 
+	BYTE m_HumanPlayerControlled; //0x0171 
+	BYTE m_InteractiveManDownAllowed; //0x0172 
+	BYTE m_ShowNametag; //0x0173 
+char pad_0x0174[0x2C]; //0x0174
+
+};//Size=0x01A0
+
+class ControllableEntityData
+{
+public:
+	char pad_0x0000[0x90]; //0x0000
+	__int32 m_DefaultTeam; //0x0090 
+	float m_LowHealthThreshold; //0x0094 
+	__int32 m_MaterialPair; //0x0098 
+	BYTE m_UsePrediction; //0x009C 
+	BYTE m_ResetTeamOnLastPlayerExits; //0x009D 
+	BYTE m_Immortal; //0x009E 
+	BYTE m_FakeImmortal; //0x009F 
+	BYTE m_ForceForegroundRendering; //0x00A0 
+	BYTE m_IgnorePhysicsCorrection; //0x00A1 
+char pad_0x00A2[0xE]; //0x00A2
+
+};//Size=0x00B0
+
+class CharacterEntityData : public ControllableEntityData
+{
+public:
+};//Size=0x00B0
+
+class ClientRagdollComponent
+{
+public:
+	char pad_0x0000[0xC0]; //0x0000
+	QuatTransform m_ActiveWorldTransforms; //0x00C0 Array
+
+};//Size=0x00E0
+
+class QuatTransform
+{
+public:
+	D3DXVECTOR4 m_TransAndScale; //0x0000 
+	D3DXVECTOR4 m_Rotation; //0x0010 
+
+};//Size=0x0020
+
+class ClientSoldierBreathComponent
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	 m_pData; //0x0010 
+	char pad_0x0018[0x8]; //0x0018
+	 m_pEntry; //0x0020 
+	char pad_0x0028[0x10]; //0x0028
+	float m_BreathControlTimer; //0x0038 
+	float m_BreathControlMultiplier; //0x003C 
+	float m_BreathControlPenaltyTimer; //0x0040 
+	float m_BreathControlPenaltyMultiplier; //0x0044 
+	float m_BreathControlActive; //0x0048 
+	float m_BreathControlInput; //0x004C 
+
+};//Size=0x0050
+
+class ClientLevel
+{
+public:
+	char pad_0x0000[0x38]; //0x0000
+	LevelData* m_pLevelData; //0x0038 
+	 m_pTeamInfo; //0x0040 
+	char pad_0x0048[0x8]; //0x0048
+	LevelSetupOption* m_pLevelOption; //0x0050 
+	__int32 m_DifficultyIndex; //0x0058 
+	char pad_0x005C[0xC4]; //0x005C
+	HavokPhysicsManager* m_pPhysicsManager; //0x0120 
+	char pad_0x0128[0x8]; //0x0128
+	 m_pGameWorld; //0x0130 
+
+};//Size=0x0138
+
+class LevelData : public WorldData
+{
+public:
+	 m_pLevelReference; //0x0070 
+	 m_PathfindingBlobs; //0x0078 
+	 m_AISystem; //0x0080 
+	 m_AI2System; //0x0088 
+	float m_WorldSizeXZ; //0x0090 
+	char pad_0x0094[0x4]; //0x0094
+	 m_LevelDescription; //0x0098 
+	char pad_0x00A1[0x80]; //0x00A1
+	float m_DefaultFOV; //0x0121 
+char pad_0x0125[0x4]; //0x0125
+
+};//Size=0x0129
+
+class WorldData
+{
+public:
+	char pad_0x0000[0x48]; //0x0000
+	 m_pRuntimeMaterialGrid; //0x0048 
+	__int32 m_OffscreenDecalTextureEntryCount; //0x0050 
+	char pad_0x0054[0xC]; //0x0054
+	BYTE m_IsWin32SubLevel; //0x0060 
+	BYTE m_IsXenonSubLevel; //0x0061 
+	BYTE m_IsPs3SubLevel; //0x0062 
+	BYTE m_IsGen4aSubLevel; //0x0063 
+	BYTE m_IsGen4bSubLevel; //0x0064 
+	BYTE m_RememberStateOnStreamOut; //0x0065 
+	char pad_0x0066[0x2]; //0x0066
+	CompnentsList* m_pComponents; //0x0068 
+
+};//Size=0x0070
+
+class CompnentsList
+{
+public:
+	 m_pComponent; //0x0000 **
+	 m_pComponent; //0x0008 
+	 m_pComponent; //0x0010 
+	 m_pComponent; //0x0018 
+	 m_pComponent; //0x0020 
+	 m_pComponent; //0x0028 
+	 m_pComponent; //0x0030 
+	 m_pComponent; //0x0038 
+	 m_pComponent; //0x0040 
+	 m_pComponent; //0x0048 
+	 m_pComponent; //0x0050 
+	 m_pComponent; //0x0058 
+	 m_pComponent; //0x0060 
+	 m_pComponent; //0x0068 
+	 m_pComponent; //0x0070 
+	 m_pComponent; //0x0078 
+	 m_pComponent; //0x0080 
+	 m_pComponent; //0x0088 
+	 m_pComponent; //0x0090 
+
+};//Size=0x0098
+
+class LevelSetupOption
+{
+public:
+};//Size=0x0002
+
+class HavokPhysicsManager
+{
+public:
+	char pad_0x0000[0x1D0]; //0x0000
+	 m_pPhysicsSettings; //0x01D0 
+	 m_pPhysicsRenderSettings; //0x01D8 
+char pad_0x01E0[0x20]; //0x01E0
+
+};//Size=0x0200
+
+class BorderInputNode
+{
+public:
+	char pad_0x0000[0x8]; //0x0000
+	InputCache* m_pInputCache; //0x0008 
+	char pad_0x0010[0x130]; //0x0010
+	Keyboard* m_pKeyboard; //0x0140 
+char pad_0x0148[0x58]; //0x0148
+
+};//Size=0x01A0
+
+class Keyboard
+{
+public:
+	char pad_0x0000[0x68]; //0x0000
+	 m_pKeyboardInputActionData; //0x0068 
+	char pad_0x0070[0x10]; //0x0070
+	 m_pPadInputActionData; //0x0080 
+
+};//Size=0x0088
+
+class OFFSET_BORDERINPUTNODE
+{
+public:
+	BorderInputNode* lpBorderInputNode; //0x0000 
+
+};//Size=0x0008
+
+class InputCache
+{
+public:
+char pad_0x0000[0xB8]; //0x0000
+
+};//Size=0x00B8
+
+class ClientSettings : public SystemSettings
+{
+public:
+	char pad_0x0008[0xB0]; //0x0008
+	BYTE m_IsSpectator; //0x00B8 
+	BYTE m_VsyncEnable; //0x00B9 
+	BYTE m_VsyncDuringLoadingScreenEnable; //0x00BA 
+	BYTE m_VisualFrameInterpolation; //0x00BB 
+	BYTE m_DebrisClusterEnabled; //0x00BC 
+	BYTE m_VegetationEnabled; //0x00BD 
+	BYTE m_ForceEnabled; //0x00BE 
+	BYTE m_WorldRenderEnabled; //0x00BF 
+char pad_0x00C0[0x98]; //0x00C0
+
+};//Size=0x0158
+
+class SystemSettings
+{
+public:
+	__int32 m_GamePlatform; //0x0000 
+char pad_0x0004[0x4]; //0x0004
+
+};//Size=0x0008
+
+class OFFSET_SYNCEDBFSETTINGS
+{
+public:
+	SyncedBFSettings* lpSyncedBFSettings; //0x0000 
+char pad_0x0008[0xC0]; //0x0008
+
+};//Size=0x00C8
+
+class SyncedBFSettings
+{
+public:
+	char pad_0x0000[0x18]; //0x0000
+	SystemSettings SystemSettings; //0x0018 
+	float m_GameModeCounterModifier; //0x0020 
+	float m_RoundTimeLimit; //0x0024 
+	char pad_0x0028[0x8]; //0x0028
+	__int32 m_Team1Faction; //0x0030 
+	__int32 m_Team2Faction; //0x0034 
+	__int32 m_Team3Faction; //0x0038 
+	__int32 m_Team4Faction; //0x003C 
+	DWORD m_CommanderSize; //0x0040 
+	char pad_0x0044[0x4]; //0x0044
+	 m_FieldSpecLevels; //0x0048 
+	__int32 m_ServerType; //0x0050 
+	BYTE m_AllUnlocksUnlocked; //0x0054 
+	BYTE m_NoMinimap; //0x0055 
+	BYTE m_NoHud; //0x0056 
+	BYTE m_NoMinimapSpotting; //0x0057 
+	BYTE m_No3dSpotting; //0x0058 
+	BYTE m_NoNameTag; //0x0059 
+	BYTE m_OnlySquadLeaderSpawn; //0x005A 
+	BYTE m_TeamSwitchingAllowed; //0x005B 
+	BYTE m_RevertBackToBF3KillerCamera; //0x005C 
+	BYTE m_DisableHitIndicators; //0x005D 
+	BYTE m_DisableVehicleCommanderActions; //0x005E 
+	BYTE m_IsCompetitive; //0x005F 
+	BYTE m_CommanderEnabled; //0x0060 
+	BYTE m_FieldUpgradeSystemActive; //0x0061 
+	BYTE m_NotifyServerWhenIgnoringDamage; //0x0062 
+	BYTE m_ForceCrashWhenIgnoringDamage; //0x0063 
+
+};//Size=0x0064
+
+class OFFSET_WORLDRENDERSETTINGS
+{
+public:
+	WorldRenderSettings* m_pWorldRenderSettings; //0x0000 
+	char pad_0x0008[0x70]; //0x0008
+	float N000032B0; //0x0078 
+	float N000032BB; //0x007C 
+	float N000032B1; //0x0080 
+	char pad_0x0084[0x3C]; //0x0084
+	DWORD N000032B9; //0x00C0 
+	DWORD N000032E6; //0x00C4 
+	DWORD N000032BF; //0x00C8 
+	char pad_0x00CC[0x14]; //0x00CC
+	DWORD N000032C2; //0x00E0 
+	BYTE N000033DD; //0x00E4 
+	BYTE N000033DF; //0x00E5 
+	BYTE N000033E2; //0x00E6 
+	BYTE N000033E0; //0x00E7 
+	BYTE N000032C3; //0x00E8 
+	BYTE N000033E9; //0x00E9 
+	BYTE N000033ED; //0x00EA 
+	BYTE N000033F0; //0x00EB 
+	BYTE N000033EE; //0x00EC 
+	BYTE N000033EA; //0x00ED 
+	BYTE N000033F5; //0x00EE 
+	BYTE N000033EB; //0x00EF 
+	BYTE N000032C4; //0x00F0 
+	BYTE N000033FA; //0x00F1 
+	BYTE N000033FF; //0x00F2 
+	BYTE N00003403; //0x00F3 
+	BYTE N00003400; //0x00F4 
+	BYTE N000033FB; //0x00F5 
+	BYTE N0000340A; //0x00F6 
+	BYTE N000033FC; //0x00F7 
+	BYTE N000032C5; //0x00F8 
+	BYTE N00003412; //0x00F9 
+	BYTE N00003416; //0x00FA 
+	BYTE N00003419; //0x00FB 
+	BYTE N00003417; //0x00FC 
+	BYTE N00003413; //0x00FD 
+	BYTE N0000341D; //0x00FE 
+	BYTE N00003414; //0x00FF 
+	BYTE N000032C6; //0x0100 
+	BYTE N00003424; //0x0101 
+	BYTE N00003428; //0x0102 
+	BYTE N0000342B; //0x0103 
+	BYTE N00003429; //0x0104 
+	BYTE N00003425; //0x0105 
+	BYTE N00003432; //0x0106 
+	BYTE N00003426; //0x0107 
+	BYTE N000032C7; //0x0108 
+	BYTE N00003436; //0x0109 
+	BYTE N0000343B; //0x010A 
+	BYTE N0000343E; //0x010B 
+	BYTE N0000343C; //0x010C 
+	BYTE N00003437; //0x010D 
+	BYTE N00003441; //0x010E 
+	BYTE N00003438; //0x010F 
+	BYTE N000032C8; //0x0110 
+	BYTE N00003455; //0x0111 
+	BYTE N0000345E; //0x0112 
+	BYTE N00003462; //0x0113 
+	BYTE N0000345F; //0x0114 
+	BYTE N00003456; //0x0115 
+	BYTE N0000345A; //0x0116 
+	BYTE N00003457; //0x0117 
+	BYTE N000032C9; //0x0118 
+	BYTE N00003450; //0x0119 
+	BYTE N00003469; //0x011A 
+	BYTE N0000346D; //0x011B 
+	BYTE N0000346A; //0x011C 
+	BYTE N00003451; //0x011D 
+	BYTE N00003471; //0x011E 
+	BYTE N00003452; //0x011F 
+	BYTE N000032CA; //0x0120 
+	BYTE N0000347D; //0x0121 
+	BYTE N00003485; //0x0122 
+	BYTE N00003488; //0x0123 
+	BYTE N00003486; //0x0124 
+	BYTE N0000347E; //0x0125 
+	BYTE N00003482; //0x0126 
+	BYTE N0000347F; //0x0127 
+	BYTE N000032CB; //0x0128 
+	BYTE N00003475; //0x0129 
+	BYTE N0000347A; //0x012A 
+	BYTE N0000348F; //0x012B 
+	BYTE N0000347B; //0x012C 
+	BYTE N00003476; //0x012D 
+	BYTE N00003494; //0x012E 
+	BYTE N00003477; //0x012F 
+	BYTE N000032CC; //0x0130 
+	BYTE N000032DD; //0x0131 
+	BYTE N000032E1; //0x0132 
+	BYTE N000032DE; //0x0133 
+	BYTE N000032D0; //0x0134 
+	BYTE m_drawSky; //0x0135 
+	BYTE m_SkyFogEnable; //0x0136 
+	BYTE m_SkyHeightFogEnable; //0x0137 
+	BYTE m_SkyForwardScatteringEnable; //0x0138 
+	BYTE N000032D9; //0x0139 
+	BYTE N00003319; //0x013A 
+	BYTE N0000331C; //0x013B 
+	BYTE N0000331A; //0x013C 
+	BYTE N000032DA; //0x013D 
+	BYTE N00003320; //0x013E 
+	BYTE N000032DB; //0x013F 
+	char pad_0x0140[0x10]; //0x0140
+	D3DXVECTOR4 m_OverlayColor; //0x0150 
+	__int32 m_GenericEntityMaxVisibleEntityCount; //0x0160 
+	__int32 m_DrawDebugGroundHeight; //0x0164 
+	char pad_0x0168[0xE8]; //0x0168
+	DWORD N00003309; //0x0250 
+	BYTE m_SimpleRenderingEnable; //0x0254 
+	BYTE m_GenericEntityRendererEnable; //0x0255 
+	BYTE m_ZBufferShadowTestEnable; //0x0256 
+	BYTE N00003314; //0x0257 
+	BYTE N0000330A; //0x0258 
+	BYTE N00003314; //0x0259 
+	BYTE N00003318; //0x025A 
+	BYTE N0000331B; //0x025B 
+	BYTE N00003319; //0x025C 
+	BYTE N00003315; //0x025D 
+	BYTE m_CloudShadowEnable; //0x025E 
+	BYTE m_OverrideDynamicAO; //0x025F 
+	BYTE m_DrawDebugDynamicAO; //0x0260 
+	BYTE N00003323; //0x0261 
+	BYTE N00003327; //0x0262 
+	BYTE N0000332A; //0x0263 
+	BYTE N00003328; //0x0264 
+	BYTE N00003324; //0x0265 
+	BYTE N0000332F; //0x0266 
+	BYTE N00003325; //0x0267 
+	BYTE N0000330C; //0x0268 
+	BYTE N00003333; //0x0269 
+	BYTE N00003337; //0x026A 
+	BYTE N0000333A; //0x026B 
+	BYTE N00003338; //0x026C 
+	BYTE N00003334; //0x026D 
+	BYTE N0000333E; //0x026E 
+	BYTE N00003335; //0x026F 
+	BYTE N0000330D; //0x0270 
+	BYTE N00003344; //0x0271 
+	BYTE N00003348; //0x0272 
+	BYTE N0000334B; //0x0273 
+	BYTE N00003349; //0x0274 
+	BYTE N00003345; //0x0275 
+	BYTE N0000334F; //0x0276 
+	BYTE N00003346; //0x0277 
+	BYTE N0000330E; //0x0278 
+	BYTE N00003353; //0x0279 
+	BYTE N00003357; //0x027A 
+	BYTE N0000335A; //0x027B 
+	BYTE N00003358; //0x027C 
+	BYTE N00003354; //0x027D 
+	BYTE N0000335E; //0x027E 
+	BYTE N00003355; //0x027F 
+	BYTE N0000330F; //0x0280 
+	BYTE N00003362; //0x0281 
+	BYTE N00003366; //0x0282 
+	BYTE N00003369; //0x0283 
+	BYTE N00003367; //0x0284 
+	BYTE N00003363; //0x0285 
+	BYTE N0000336D; //0x0286 
+	BYTE N00003364; //0x0287 
+	BYTE N0000330A; //0x0288 
+	BYTE N00003373; //0x0289 
+	BYTE N00003377; //0x028A 
+	BYTE N0000337A; //0x028B 
+	BYTE N00003378; //0x028C 
+	BYTE N00003374; //0x028D 
+	BYTE N0000338B; //0x028E 
+	BYTE N00003375; //0x028F 
+	BYTE N0000330B; //0x0290 
+	BYTE N0000338F; //0x0291 
+	BYTE N00003393; //0x0292 
+	BYTE N000033A5; //0x0293 
+	BYTE N00003394; //0x0294 
+	BYTE N00003390; //0x0295 
+	BYTE N0000339A; //0x0296 
+	BYTE N00003391; //0x0297 
+	BYTE N0000330C; //0x0298 
+	BYTE N0000339D; //0x0299 
+	BYTE N000033A8; //0x029A 
+	BYTE N000033AB; //0x029B 
+	BYTE N000033A9; //0x029C 
+	BYTE N0000339E; //0x029D 
+	BYTE N000033AF; //0x029E 
+	BYTE N0000339F; //0x029F 
+	BYTE N0000330D; //0x02A0 
+	BYTE N000033B3; //0x02A1 
+	BYTE N000033BA; //0x02A2 
+	BYTE N000033BE; //0x02A3 
+	BYTE N000033BB; //0x02A4 
+	BYTE N000033B4; //0x02A5 
+	BYTE N000033B7; //0x02A6 
+	BYTE N000033B5; //0x02A7 
+	BYTE N0000330E; //0x02A8 
+	BYTE N000033C4; //0x02A9 
+	BYTE N000033C8; //0x02AA 
+	BYTE N000033CB; //0x02AB 
+	BYTE N000033C9; //0x02AC 
+	BYTE N000033C5; //0x02AD 
+	BYTE N000033D0; //0x02AE 
+	BYTE N000033C6; //0x02AF 
+	BYTE N0000330F; //0x02B0 
+	BYTE m_LightCubeMapStencilEnable; //0x02B1 
+	BYTE m_DrawDebugIndirectCubeMapEnable; //0x02B2 
+char pad_0x02B3[0x15]; //0x02B3
+
+m_SimpleRenderingEnable
+
+
+};//Size=0x02C8
+
+class WorldRenderSettings
+{
+public:
+	char pad_0x0000[0x27E]; //0x0000
+	BYTE m_LensFlaresEnable; //0x027E 
+	char pad_0x027F[0x3]; //0x027F
+	BYTE m_CloudShadowEnable; //0x0282 
+char pad_0x0283[0x9]; //0x0283
+
+};//Size=0x028C
+
+class TopSecretInfo
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class ClientConnection
+{
+public:
+char pad_0x0000[0x20]; //0x0000
+
+};//Size=0x0020
+
+class ClientConnection
+{
+public:
+char pad_0x0000[0x10]; //0x0000
+
+};//Size=0x0010
+
+class ConnectionStats
+{
+public:
+	double m_LifeTime; //0x0000 
+	__int32 m_BytesSent; //0x0008 
+	__int32 m_BytesReceived; //0x000C 
+	__int32 m_PacketsSent; //0x0010 
+	__int32 m_PacketsReceived; //0x0014 
+	__int32 m_PingsSent; //0x0018 
+	__int32 m_PingsReceived; //0x001C 
+	__int32 m_ForceNotifyPacketsReceived; //0x0020 
+	__int32 m_ForceNotifyPacketsSent; //0x0024 
+	__int32 m_PacketsAccepted; //0x0028 
+	__int32 m_PacketsLost; //0x002C 
+	__int32 m_PacketsNotifiedLost; //0x0030 
+char pad_0x0034[0x4]; //0x0034
+
+};//Size=0x0038
+
+class ClientDamageStream
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class OFFSET_DXRENDERER
+{
+public:
+	DxRenderer* lpDxRenderer; //0x0000 
+
+};//Size=0x0008
+
+class DxRenderer
+{
+public:
+	char pad_0x0000[0x28]; //0x0000
+	__int32 m_FrameCounter; //0x0028 
+	BYTE m_FrameInProgress; //0x002C 
+	char pad_0x002D[0xB]; //0x002D
+	Screen* m_pScreen; //0x0038 
+	char pad_0x0040[0x40]; //0x0040
+	DxDisplaySettings* m_pDisplaySettings; //0x0080 
+	char pad_0x0088[0x78]; //0x0088
+	 m_pDevice; //0x0100 ID3D11Device*
+	 m_pContext; //0x0108 ID3D11DeviceContext*
+	char pad_0x0110[0x260]; //0x0110
+	char pad_0x0371[0x458]; //0x0371
+	BYTE N00002DF2; //0x07C9 
+	char pad_0x07CA[0x6]; //0x07CA
+	N00002E04* N00002E02; //0x07D0 
+char pad_0x07D8[0x59]; //0x07D8
+
+};//Size=0x0831
+
+class Screen
+{
+public:
+	 m_HWND; //0x0000 
+	char pad_0x0008[0x40]; //0x0008
+	__int32 m_FullscreenMode; //0x0048 
+	BYTE m_TopWindow; //0x004C 
+	BYTE m_Minimized; //0x004D 
+	BYTE m_Maximized; //0x004E 
+	BYTE m_Resizing; //0x004F 
+	char pad_0x0050[0x8]; //0x0050
+	RenderScreenInfo m_ScreenInfo; //0x0058 
+	char pad_0x0070[0x78]; //0x0070
+	 m_pSwapChain; //0x00E8 
+	 m_pBackBufferTexture; //0x00F0 
+	char pad_0x00F8[0x10]; //0x00F8
+	 m_pDefaultRenderTargetView; //0x0108 
+
+};//Size=0x0110
+
+class RenderScreenInfo
+{
+public:
+	__int32 m_Width; //0x0000 
+	__int32 m_Height; //0x0004 
+char pad_0x0008[0x10]; //0x0008
+
+};//Size=0x0018
+
+class OFFSET_GAMERENDERER
+{
+public:
+	GameRenderer* lpGameRenderer; //0x0000 
+
+};//Size=0x0008
+
+class GameRenderer
+{
+public:
+	char pad_0x0000[0x48]; //0x0000
+	GameRenderSettings* m_pRenderSettings; //0x0048 
+	char pad_0x0050[0x10]; //0x0050
+	GameRenderViewParams* m_pViewParams; //0x0060 
+char pad_0x0068[0x20]; //0x0068
+
+};//Size=0x0088
+
+class GameRenderViewParams : public RenderView
+{
+public:
+	RenderView m_PrevView; //0x04E0 
+	RenderView m_SecondaryStreamingView; //0x09C0 
+	BYTE m_SecondaryStreamingViewEnable; //0x0EA0 
+char pad_0x0EA1[0x7]; //0x0EA1
+
+};//Size=0x0EA8
+
+class RenderView : public RenderViewDesc
+{
+public:
+	Frustum m_Frustum; //0x00F0 
+	float m_FovX; //0x0250 
+	float m_DepthHeightRatio; //0x0254 
+	float m_FovScale; //0x0258 
+	float m_FovScaleSqr; //0x025C 
+	DirectX::XMMATRIX m_ViewMatrix; //0x0260 
+	DirectX::XMMATRIX m_ViewMatrixTranspose; //0x02A0 
+	DirectX::XMMATRIX m_ViewMatrixInverse; //0x02E0 
+	DirectX::XMMATRIX m_ProjectionMatrix; //0x0320 
+	DirectX::XMMATRIX m_ViewMatrixAtOrigin; //0x0360 
+	DirectX::XMMATRIX m_ProjectionTranspose; //0x03A0 
+	DirectX::XMMATRIX m_ProjectionInverse; //0x03E0 
+	DirectX::XMMATRIX m_ViewProjection; //0x0420 
+	DirectX::XMMATRIX m_ViewProjectionTranspose; //0x0460 
+	DirectX::XMMATRIX m_ViewProjectionInverse; //0x04A0 
+
+};//Size=0x04E0
+
+class RenderViewDesc
+{
+public:
+	DirectX::XMMATRIX m_TransformFirstPerson; //0x0000 
+	DirectX::XMMATRIX m_Transform; //0x0040 
+	D3DXVECTOR4 m_Trans; //0x0080 
+	D3DXVECTOR2 m_ViewportOffset; //0x0090 
+	D3DXVECTOR2 m_ViewportScale; //0x0098 
+	D3DXVECTOR4 m_ObliqueClipPlane; //0x00A0 
+	__int32 m_Type; //0x00B0 
+	float m_FovY; //0x00B4 
+	float m_DefaultFovY; //0x00B8 
+	float m_NearPlane; //0x00BC 
+	float m_FarPlane; //0x00C0 
+	float m_Aspect; //0x00C4 
+	float m_OrthoWidth; //0x00C8 
+	float m_OrthoHeight; //0x00CC 
+	float m_StereoSeparation; //0x00D0 
+	float m_StereoConvergence; //0x00D4 
+	BYTE m_ObliqueClipEnable; //0x00D8 
+	BYTE m_RightHanded; //0x00D9 
+char pad_0x00DA[0x16]; //0x00DA
+
+};//Size=0x00F0
+
+class Frustum
+{
+public:
+	DirectX::XMMATRIX m_Transform; //0x0000 
+	AxisAlignedBox m_BoundingBox; //0x0040 
+	char pad_0x0060[0x80]; //0x0060
+	D3DXVECTOR4 m_Center; //0x00E0 
+	char pad_0x00F0[0x60]; //0x00F0
+	float m_Radius; //0x0150 
+	float m_RadiusSqr; //0x0154 
+	BYTE m_RightHanded; //0x0158 
+char pad_0x0159[0x7]; //0x0159
+
+};//Size=0x0160
+
+class AxisAlignedBox
+{
+public:
+	D3DXVECTOR4 m_Min; //0x0000 
+	D3DXVECTOR4 m_Max; //0x0010 
+
+};//Size=0x0020
+
+class GameRenderSettings
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	__int32 m_InactiveSkipFrameCount; //0x0010 
+	float m_ResolutionScale; //0x0014 
+	char pad_0x0018[0x80]; //0x0018
+	BYTE m_Enable; //0x0098 
+	BYTE m_NullRendererEnable; //0x0099 
+	BYTE m_JobEnable; //0x009A 
+	BYTE m_BuildJobSyncEnable; //0x009B 
+	BYTE m_EarlyGpuSyncEnable; //0x009C 
+	BYTE m_DrawDebugInfo; //0x009D 
+	BYTE m_DrawScreenInfo; //0x009E 
+	BYTE m_FullScreen; //0x009F 
+	BYTE m_ForceVSyncEnable; //0x00A0 
+char pad_0x00A1[0x68]; //0x00A1
+
+};//Size=0x0109
+
+class DxDisplaySettings : public SystemSettings
+{
+public:
+	 m_DebugBreakIgnoredIDs; //0x0008 
+	__int32 m_FullscreenHeight; //0x0010 
+	__int32 m_FullscreenWidth; //0x0014 
+	float m_FullscreenRefreshRate; //0x0018 
+	__int32 m_FullscreenOutputIndex; //0x001C 
+	__int32 m_PresentInterval; //0x0020 
+	__int32 m_PresentImmediateThreshold; //0x0024 
+	__int32 m_RenderAheadLimit; //0x0028 
+	float m_StereoDepth; //0x002C 
+	float m_StereoConvergenceScale; //0x0030 
+	float m_StereoSeperationScale; //0x0034 
+	float m_StereoSoldierZoomConvergenceScale; //0x0038 
+	__int32 m_NvidiaMinDriverVersion; //0x003C 
+	float m_LowResDisplayPlaneScale; //0x0041 
+	BYTE m_NullDriverEnable; //0x0045 
+	BYTE m_RefDriverEnable; //0x0046 
+	BYTE m_WarpDriverEnable; //0x0047 
+	BYTE m_Dx10Dot0Enable; //0x0048 
+	BYTE m_Dx10Dot1Enable; //0x0049 
+	BYTE m_Dx10PlusEnable; //0x004A 
+	BYTE m_Dx11Enable; //0x004B 
+	BYTE m_Dx11Dot1Enable; //0x004C 
+	BYTE m_Dx11Dot1RunetimeEnable; //0x004D 
+	BYTE m_CreateMinimalWindow; //0x004E 
+	BYTE M_DriverInternalThreadingEnable; //0x004F 
+	BYTE m_DxDiagDriverDetectionEnable; //0x0050 
+	BYTE m_DxDiagDriverDetectionEnable; //0x0051 
+char pad_0x0052[0x1F]; //0x0052
+
+};//Size=0x0071
+
+class SkeletonAsset
+{
+public:
+	char pad_0x0000[0x18]; //0x0000
+	StringList* m_ppNames; //0x0018 
+char pad_0x0020[0x20]; //0x0020
+
+};//Size=0x0040
+
+class StringList
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class GameAnimatable
+{
+public:
+char pad_0x0000[0x70]; //0x0000
+
+};//Size=0x0070
+
+class ClientGameView
+{
+public:
+	char pad_0x0000[0x8]; //0x0000
+	__int32 m_ActiveCamera; //0x0008 
+	char pad_0x000C[0xC]; //0x000C
+	__int32 m_Camera; //0x0018 
+	char pad_0x001C[0x94]; //0x001C
+	D3DXVECTOR4 m_CameraTargetDistance; //0x00B0 
+	 m_pFreeCameraScene; //0x00C0 
+	FreeCamera* m_pFreeCamera; //0x00C8 fb::FreeCamera*
+	__int32 m_FreeCameraMode; //0x00D0 
+	__int32 m_FreeCameraPriority; //0x00D4 
+	BYTE m_CameraPosInitialized1; //0x00D8 
+	BYTE m_CameraPosInitialized2; //0x00D9 
+	BYTE m_CameraPosInitialized3; //0x00DA 
+	BYTE m_FreeCameraActivated; //0x00DB 
+	char pad_0x00DC[0x4]; //0x00DC
+	 m_pEntry; //0x00E0 
+char pad_0x00E8[0x80]; //0x00E8
+
+};//Size=0x0168
+
+class FreeCamera
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	DirectX::XMMATRIX m_Transform; //0x0010 
+	char pad_0x0050[0x58]; //0x0050
+	float m_Fov; //0x00A8 
+	float m_DotFocusDistance; //0x00AC 
+char pad_0x00B0[0x60]; //0x00B0
+
+};//Size=0x0110
+
+class ClientVehicleEntity
+{
+public:
+	N00002D2F* N28C9D2ED; //0x0000 
+	char pad_0x0008[0x28]; //0x0008
+	VehicleEntityData* m_pVehicleData; //0x0030 
+	char pad_0x0038[0x108]; //0x0038
+	ClientVehicleHealthComponent* ClientVehicleHealthComponent; //0x0140 
+	char pad_0x0148[0x20]; //0x0148
+	 m_pVehicleSpawn; //0x0168 
+	char pad_0x0170[0x8]; //0x0170
+	HealthComponent* m_pVehicleHealth; //0x0178 
+	ClientVehicleBouncePhysicsComponent* m_pVehicleBouncePhysics; //0x0180 
+	char pad_0x0188[0xB0]; //0x0188
+	DynamicPhysicsEntity* m_pPhysicsEntity; //0x0238 
+	char pad_0x0240[0x10]; //0x0240
+	N000055E5* m_childrenAABB; //0x0250 
+	char pad_0x0258[0x28]; //0x0258
+	D3DXVECTOR3 m_Velocity; //0x0280 
+	char pad_0x028C[0x4]; //0x028C
+	D3DXVECTOR3 m_prevVelocity; //0x0290 
+	char pad_0x029C[0x144]; //0x029C
+	ClientChassisComponent* m_pChassisComponent; //0x03E0 
+char pad_0x03E8[0x40]; //0x03E8
+
+};//Size=0x0428
+
+class ClientVehicleBouncePhysicsComponent
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	VehicleBouncePhysicsComponentData* m_pData; //0x0010 
+	char pad_0x0018[0x8]; //0x0018
+	 m_pDynamicPhysicsEntity; //0x0020 
+char pad_0x0028[0x60]; //0x0028
+
+};//Size=0x0088
+
+class VehicleBouncePhysicsComponentData
+{
+public:
+	char pad_0x0000[0x80]; //0x0000
+	float m_MaxReflectionVecUp; //0x0080 
+	float m_MaxFacingAngle; //0x0084 
+	float m_MaxVehicleFacingAngle; //0x0088 
+	float m_CounterImpulseStrength; //0x008C 
+	char pad_0x0090[0x4]; //0x0090
+	float m_CollisionDamageModifer; //0x0094 
+	float m_CollisionDamageDealtModifier; //0x0098 
+char pad_0x009C[0x4]; //0x009C
+
+};//Size=0x00A0
+
+class HealthComponent
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	 m_pHealthComponentData; //0x0010 
+	char pad_0x0018[0x20]; //0x0018
+	float m_VehicleHealth; //0x0038 
+char pad_0x003C[0x4]; //0x003C
+
+};//Size=0x0040
+
+class ClientChassisComponent : public ClientPartComponent
+{
+public:
+	char pad_0x00B8[0x28]; //0x00B8
+	D3DXVECTOR4 m_InitialPosition; //0x00E0 
+	 m_pPhysicsEntity; //0x00F0 
+char pad_0x00F8[0x148]; //0x00F8
+
+};//Size=0x0240
+
+class ClientPartComponent
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	VehicleComponentData* m_pComponentData; //0x0010 
+	char pad_0x0018[0x8]; //0x0018
+	 m_pEntry; //0x0020 
+	char pad_0x0028[0x10]; //0x0028
+	 m_pPhysicsEntity; //0x0038 
+char pad_0x0040[0x78]; //0x0040
+
+};//Size=0x00B8
+
+class VehicleComponentData
+{
+public:
+	char pad_0x0000[0x90]; //0x0000
+	VehicleConfigData* m_pVehicleConfigData; //0x0090 
+char pad_0x0098[0xE8]; //0x0098
+
+};//Size=0x0180
+
+class VehicleConfigData
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	AeroDynamicPhysics m_AeroDynamicPhysics; //0x0010 
+	MotorbikeData m_MotorbikePhysics; //0x0018 
+	D3DXVECTOR4 m_CenterOfMass; //0x0020 
+	D3DXVECTOR4 m_CenterOfMassHandlingOffset; //0x0030 
+	D3DXVECTOR4 m_InertiaOverride; //0x0040 
+	D3DXVECTOR4 m_InertiaModifier; //0x0050 
+	char pad_0x0060[0x10]; //0x0060
+	 m_pMotionDampData; //0x0070 
+	char pad_0x0078[0x7C]; //0x0078
+	float m_BodyMass; //0x00F4 
+	float m_GravityModifier; //0x00F8 
+	float m_YawMin; //0x00FC 
+char pad_0x0100[0x80]; //0x0100
+
+};//Size=0x0180
+
+class AeroDynamicPhysics
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class MotorbikeData
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N015B075E
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N015CBF0A
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N015CCF11
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N016FEB31
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N0170AF55
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N01D3AA5B
+{
+public:
+	char pad_0x0000[0x28]; //0x0000
+	N01DB97B1* N01D3AA61; //0x0028 
+char pad_0x0030[0x10]; //0x0030
+
+};//Size=0x0040
+
+class N01DB97B1
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class CHlarge
+{
+public:
+	char pad_0x0000[0x28]; //0x0000
+	N01EE3B37* N01DF8EF4; //0x0028 
+char pad_0x0030[0x600]; //0x0030
+
+};//Size=0x0630
+
+class N01EE3B37
+{
+public:
+	N01EEB61F* N01EE3B38; //0x0000 
+char pad_0x0008[0x438]; //0x0008
+
+};//Size=0x0440
+
+class N01EEB61F
+{
+public:
+	char pad_0x0000[0x130]; //0x0000
+	N01F0E5EA* N01F0A1F9; //0x0130 
+	char pad_0x0138[0x58]; //0x0138
+	N05A0278C* N059FADA8; //0x0190 
+char pad_0x0198[0x78]; //0x0198
+
+};//Size=0x0210
+
+class N01F0E5EA
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class Railgun
+{
+public:
+char pad_0x0000[0x1040]; //0x0000
+
+};//Size=0x1040
+
+class N059DFFE8
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N05A0278C
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class items
+{
+public:
+	char pad_0x0000[0x28]; //0x0000
+	N05A54F15* N05A419AD; //0x0028 
+char pad_0x0030[0x410]; //0x0030
+
+};//Size=0x0440
+
+class N05A54F15
+{
+public:
+	N05A697C5* N05A54F16; //0x0000 
+	char pad_0x0008[0x38]; //0x0008
+	N000033A7* N05A575D0; //0x0040 
+char pad_0x0048[0x1B8]; //0x0048
+
+};//Size=0x0200
+
+class N05A697C5
+{
+public:
+	char pad_0x0000[0x130]; //0x0000
+	N05A71EDA* N05A6C6DB; //0x0130 
+char pad_0x0138[0xD08]; //0x0138
+
+};//Size=0x0E40
+
+class N05A71EDA
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N00BDAEEE
+{
+public:
+	char pad_0x0000[0x50]; //0x0000
+	float N00BDDCA3; //0x0050 
+char pad_0x0054[0x7DC]; //0x0054
+
+};//Size=0x0830
+
+class N00C17146
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N00C1A30E
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N00C20BE5
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class N0120B50A
+{
+public:
+char pad_0x0000[0x68]; //0x0000
+
+};//Size=0x0068
+
+class N01220BBB
+{
+public:
+char pad_0x0000[0x40]; //0x0000
+
+};//Size=0x0040
+
+class Angles
+{
+public:
+	char pad_0x0000[0x30]; //0x0000
+	fb::WeaponEntityData* WeaponEntityData; //0x0030 
+	char pad_0x0038[0x4950]; //0x0038
+	ClientSoldierAimingSimulation* pAUTHORATIVEAIMING ; //0x4988 
+	char pad_0x4990[0x18]; //0x4990
+	ClientWeapon* m_pWeapon; //0x49A8 
+	char pad_0x49B0[0x10]; //0x49B0
+	WeaponFiring* m_pPrimary; //0x49C0 
+char pad_0x49C8[0x78]; //0x49C8
+
+};//Size=0x4A40
+
+class WeaponFiring
+{
+public:
+	char pad_0x0000[0x78]; //0x0000
+	WeaponSwayData* WeaponSway; //0x0078 
+	char pad_0x0080[0x80]; //0x0080
+	__int32 N00001E4E; //0x0100 
+	char pad_0x0104[0x24]; //0x0104
+	N000027B2* PrimaryFire; //0x0128 
+char pad_0x0130[0x50]; //0x0130
+
+};//Size=0x0180
+
+class N0000278F
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N000027B2
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	FiringFunctionData* FiringFunctionData; //0x0010 
+char pad_0x0018[0x40]; //0x0018
+
+};//Size=0x0058
+
+class N000027B7
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00002C1B
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N00002C37
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00002C51
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class PhysicsEntityBase
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class ClientReplication
+{
+public:
+	char pad_0x0000[0x30]; //0x0000
+	float PositionX; //0x0030 
+	float PositionY; //0x0034 
+	float PositionZ; //0x0038 
+char pad_0x003C[0x54]; //0x003C
+
+};//Size=0x0090
+
+class N00002C66
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00002C7B
+{
+public:
+	char pad_0x0000[0x50]; //0x0000
+	N000032A7* N00002C89; //0x0050 
+char pad_0x0058[0x90]; //0x0058
+
+};//Size=0x00E8
+
+class N00002C8E
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N00002CA3
+{
+public:
+char pad_0x0000[0xA8]; //0x0000
+
+};//Size=0x00A8
+
+class N00002CD5
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N00002CEB
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00002D09
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N00002D2F
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	 N00002D32; //0x0010 
+	char pad_0x0018[0x20]; //0x0018
+	char N00002D37[12]; //0x0038 
+char pad_0x0044[0x4]; //0x0044
+
+};//Size=0x0048
+
+class N00002E04
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	N00002E10* N00002E08; //0x0010 
+char pad_0x0018[0x30]; //0x0018
+
+};//Size=0x0048
+
+class N00002E10
+{
+public:
+	char pad_0x0000[0x18]; //0x0000
+	N00002E66* N00002E14; //0x0018 
+	float N00002E15; //0x0020 
+	char pad_0x0024[0x13C]; //0x0024
+	float N00002E3D; //0x0160 
+	char pad_0x0164[0x9C]; //0x0164
+	float N00002E51; //0x0200 
+	char pad_0x0204[0x24]; //0x0204
+	float N00002E56; //0x0228 
+	char pad_0x022C[0x24]; //0x022C
+	float N00002E5B; //0x0250 
+	float N00002E63; //0x0254 
+	char pad_0x0258[0x70]; //0x0258
+	N00002EA6* N00002E90; //0x02C8 
+	char pad_0x02D0[0x40]; //0x02D0
+	float N00002E91; //0x0310 
+	char pad_0x0314[0x1C]; //0x0314
+	float N00002E95; //0x0330 
+	char pad_0x0334[0x24]; //0x0334
+	float N00002EBD; //0x0358 
+char pad_0x035C[0x6C]; //0x035C
+
+};//Size=0x03C8
+
+class N00002E66
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N00002E9B
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N00002EA6
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N00002EDE
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	N00002EE9* N00002EE1; //0x0010 
+char pad_0x0018[0x30]; //0x0018
+
+};//Size=0x0048
+
+class N00002EE9
+{
+public:
+	char pad_0x0000[0x70]; //0x0000
+	float N00002EF8; //0x0070 
+	float N00002EFC; //0x0074 
+char pad_0x0078[0x10]; //0x0078
+
+};//Size=0x0088
+
+class N00002E65
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00002E7B
+{
+public:
+char pad_0x0000[0x1C0]; //0x0000
+
+};//Size=0x01C0
+
+class N00002EC8
+{
+public:
+	char pad_0x0000[0x8]; //0x0000
+	N00002ED3* N00002ECA; //0x0008 
+char pad_0x0010[0x38]; //0x0010
+
+};//Size=0x0048
+
+class N00002ED3
+{
+public:
+	char pad_0x0000[0x440]; //0x0000
+	float N00002F78; //0x0440 
+	float N00002F9A; //0x0444 
+char pad_0x0448[0x100]; //0x0448
+
+};//Size=0x0548
+
+class ClientVaultComponent
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	VaultComponentData* VaultComponentData; //0x0010 
+	char pad_0x0018[0x8]; //0x0018
+	ClientPlayerEntryComponent* ClientPlayerEntryComponent; //0x0020 
+	char pad_0x0028[0x158]; //0x0028
+	D3DXVECTOR4 OldPosition; //0x0180 
+	float height_vaulted; //0x0190 
+	char pad_0x0194[0xC]; //0x0194
+	D3DXVECTOR4 NewPosition; //0x01A0 
+	DWORD N00003167; //0x01B0 
+	char pad_0x01B4[0x7C]; //0x01B4
+	D3DXVECTOR4 N00003177; //0x0230 
+	char pad_0x0240[0x10]; //0x0240
+	D3DXVECTOR4 m_TeleportVector; //0x0250 
+char pad_0x0260[0x10]; //0x0260
+
+};//Size=0x0270
+
+class CameraRecoilData
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	float m_SpringConstant; //0x0010 
+	float m_SpringDamping; //0x0014 
+	float m_SpringMinThresholdAngle; //0x0018 
+char pad_0x001C[0x2C]; //0x001C
+
+};//Size=0x0048
+
+class N00002FF7
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00003002
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class ClientSoldierAimingSimulation
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	fpsAimer* fpsAimer; //0x0010 
+	char pad_0x0018[0x10]; //0x0018
+	float N00003025; //0x0028 
+	char pad_0x002C[0x4]; //0x002C
+	float N00003026; //0x0030 
+	char pad_0x0034[0x4]; //0x0034
+	float N00003027; //0x0038 
+	char pad_0x003C[0x4]; //0x003C
+	float N00003028; //0x0040 
+	char pad_0x0044[0x4]; //0x0044
+	float N0000302B; //0x0048 
+	char pad_0x004C[0x4]; //0x004C
+	float N0000302C; //0x0050 
+	char pad_0x0054[0x4]; //0x0054
+	float N0000302D; //0x0058 
+char pad_0x005C[0x2C]; //0x005C
+
+};//Size=0x0088
+
+class fpsAimer
+{
+public:
+	char pad_0x0000[0x14]; //0x0000
+	float Yaw; //0x0014 
+	float Pitch; //0x0018 
+char pad_0x001C[0x2C]; //0x001C
+
+};//Size=0x0048
+
+class N00002FEB
+{
+public:
+	char pad_0x0000[0x30]; //0x0000
+	DWORD N00002FF2; //0x0030 
+	DWORD N00002FFD; //0x0034 
+	DWORD N00002FF3; //0x0038 
+	DWORD N00003000; //0x003C 
+	DWORD N00002FF4; //0x0040 
+	DWORD N00003003; //0x0044 
+	DWORD N00002FF5; //0x0048 
+	DWORD N00003006; //0x004C 
+char pad_0x0050[0x30]; //0x0050
+
+};//Size=0x0080
+
+class N00003015
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class ClientWeapon
+{
+public:
+	char pad_0x0000[0x20]; //0x0000
+	DWORD WeaponID; //0x0020 
+	char pad_0x0024[0x1C]; //0x0024
+	D3DXVECTOR3 N000055CA; //0x0040 
+	char pad_0x004C[0x24]; //0x004C
+	D3DXVECTOR3 N000055D0; //0x0070 
+char pad_0x007C[0x54]; //0x007C
+
+};//Size=0x00D0
+
+class N0000304B
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N00003030
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00003033
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00003036
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N00003041
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00003044
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N00003067
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class DynamicPhysicsEntity
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class VehicleEntityData
+{
+public:
+	char pad_0x0000[0xB0]; //0x0000
+	D3DXVECTOR3 m_CriticallyDamagedEffectPosition; //0x00B0 
+	char pad_0x00BC[0x4]; //0x00BC
+	D3DXVECTOR3 m_PreExplosionEffectPosition; //0x00C0 
+	char pad_0x00CC[0x4]; //0x00CC
+	 VehicleHudData m_HudData; //0x00D0 
+	char pad_0x00D8[0x38]; //0x00D8
+	D3DXVECTOR3 m_FLIRKeyColor; //0x0110 
+	char pad_0x011C[0x4]; //0x011C
+	D3DXVECTOR3 m_InteractionOffset; //0x0120 
+	char pad_0x012C[0x4]; //0x012C
+	 m_ControllableType; //0x0130 
+	float m_DisabledDamageThreshold; //0x0138 
+	float m_ClearDisabledDamageThreshold; //0x013C 
+	float m_PreDestructionDamageThreshold; //0x0140 
+	char pad_0x0144[0x4]; //0x0144
+	VehicleHealthZoneData m_FrontHealthZone; //0x0148 
+	char pad_0x0165[0x3]; //0x0165
+	N000056DA m_RearHealthZone; //0x0168 
+	char pad_0x0170[0x18]; //0x0170
+	N000056DD m_LeftHealthZone; //0x0188 
+	char pad_0x0190[0x18]; //0x0190
+	N000056E0 m_RightHealthZone; //0x01A8 
+	char pad_0x01B0[0x18]; //0x01B0
+	N000056E3 m_TopHealthZone; //0x01C8 
+	char pad_0x01D0[0x78]; //0x01D0
+	 m_NameSid; //0x0248 
+	__int32 m_MaxPlayersInVehicle; //0x0250 
+	char pad_0x0254[0x34]; //0x0254
+	float m_ExitDirectionSpeedThreshold; //0x0288 
+	float m_FLIRValue; //0x028C 
+char pad_0x0290[0x298]; //0x0290
+
+};//Size=0x0528
+
+class DynamicPhysicsEntity
+{
+public:
+	char pad_0x0000[0xA0]; //0x0000
+	PhysicsEntityTransform* m_EntityTransform; //0x00A0 
+char pad_0x00A8[0x20]; //0x00A8
+
+};//Size=0x00C8
+
+class N000030E9
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N00003106
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N0000311A
+{
+public:
+	char pad_0x0000[0x70]; //0x0000
+	float N00003129; //0x0070 
+	float N0000312D; //0x0074 
+char pad_0x0078[0x10]; //0x0078
+
+};//Size=0x0088
+
+class VaultComponentData
+{
+public:
+	char pad_0x0000[0x48]; //0x0000
+	float N0000313A; //0x0048 
+	char pad_0x004C[0x24]; //0x004C
+	float m_StartHeightMax; //0x0070 
+	float m_StartHeightMin; //0x0074 
+	float N00003143; //0x0078 
+	float N00003141; //0x007C 
+	char pad_0x0080[0x4]; //0x0080
+	float N00003132; //0x0084 
+	char pad_0x0088[0x4]; //0x0088
+	float N00003133; //0x008C 
+	float N00003151; //0x0090 
+	char pad_0x0094[0x30]; //0x0094
+	__int32 N0000313A; //0x00C4 
+char pad_0x00C8[0x7C]; //0x00C8
+
+};//Size=0x0144
+
+class ClientPlayerEntryComponent
+{
+public:
+	char pad_0x0000[0x10]; //0x0000
+	PlayerEntryComponentData* PlayerEntryComponentData; //0x0010 
+char pad_0x0018[0x30]; //0x0018
+
+};//Size=0x0048
+
+class ClientVehicleHealthComponent
+{
+public:
+	char pad_0x0000[0x38]; //0x0000
+	float m_vehicleHealth; //0x0038 
+char pad_0x003C[0xC]; //0x003C
+
+};//Size=0x0048
+
+class N000031F5
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N000031FA
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class m_PlayerView
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N0000321F
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N0000323A
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N0000328A
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N0000328D
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N00003290
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N000032A7
+{
+public:
+	DWORD N000032A8; //0x0000 
+char pad_0x0004[0x4C]; //0x0004
+
+};//Size=0x0050
+
+class fb::WeaponEntityData
+{
+public:
+	char pad_0x0000[0x80]; //0x0000
+	__int32 m_WeaponClass; //0x0080 
+	char pad_0x0084[0x4]; //0x0084
+	 m_WeaponStates; //0x0088 
+	WeaponFiringData* m_WeaponFiring; //0x0090 
+	char pad_0x0098[0x8]; //0x0098
+	GameAIWeaponData* m_AIData; //0x00A0 
+char pad_0x00A8[0x20]; //0x00A8
+
+};//Size=0x00C8
+
+class N000032D0
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N000032DC
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class RumbleFiringData
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class PlayerEntryComponentData
+{
+public:
+	char pad_0x0000[0xF0]; //0x0000
+	D3DXVECTOR3 N000032A2; //0x00F0 
+	char pad_0x00FC[0x4]; //0x00FC
+	 N000032A4; //0x0100 
+
+};//Size=0x0108
+
+class N000033A7
+{
+public:
+	N0000485E* N0000481E; //0x0000 
+	N000033BA* N000033A9; //0x0008 
+	N00004820* N000033AA; //0x0010 
+char pad_0x0018[0xF0]; //0x0018
+
+};//Size=0x0108
+
+class N000033BA
+{
+public:
+	char pad_0x0000[0x18]; //0x0000
+	USLARGE* N000033BE; //0x0018 
+char pad_0x0020[0x258]; //0x0020
+
+};//Size=0x0278
+
+class USLARGE
+{
+public:
+	char pad_0x0000[0x50]; //0x0000
+	N000037FF* N000033D8; //0x0050 
+	char pad_0x0058[0x8]; //0x0058
+	US-Support* US-Support; //0x0060 
+	char pad_0x0068[0x11B8]; //0x0068
+	N00003CC1* N0000367C; //0x1220 
+char pad_0x1228[0x6318]; //0x1228
+
+};//Size=0x7540
+
+class US-Support
+{
+public:
+	char pad_0x0000[0x1B8]; //0x0000
+	N0000342B* N00003418; //0x01B8 
+char pad_0x01C0[0x88]; //0x01C0
+
+};//Size=0x0248
+
+class N0000342B
+{
+public:
+	N00003436* N0000342C; //0x0000 
+char pad_0x0008[0x40]; //0x0008
+
+};//Size=0x0048
+
+class N00003436
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N000037C1
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N000037DC
+{
+public:
+char pad_0x0000[0x108]; //0x0000
+
+};//Size=0x0108
+
+class N000037FF
+{
+public:
+	char pad_0x0000[0x130]; //0x0000
+	N00003832* N00003826; //0x0130 
+	char pad_0x0138[0x70]; //0x0138
+	N00005152* N000038FB; //0x01A8 
+	char pad_0x01B0[0xF78]; //0x01B0
+	N00003B00* N00003AEB; //0x1128 
+char pad_0x1130[0xC98]; //0x1130
+
+};//Size=0x1DC8
+
+class N00003832
+{
+public:
+char pad_0x0000[0x18]; //0x0000
+
+};//Size=0x0018
+
+class N00003835
+{
+public:
+char pad_0x0000[0xB30]; //0x0000
+
+};//Size=0x0B30
+
+class N00003B00
+{
+public:
+	N00003B13* N00003B01; //0x0000 
+char pad_0x0008[0x80]; //0x0008
+
+};//Size=0x0088
+
+class N00003B13
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N00003CA6
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N00003CC1
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N000047FC
+{
+public:
+char pad_0x0000[0x108]; //0x0000
+
+};//Size=0x0108
+
+class N00004820
+{
+public:
+	char pad_0x0000[0x18]; //0x0000
+	CH LARGE* N00004824; //0x0018 
+char pad_0x0020[0xE8]; //0x0020
+
+};//Size=0x0108
+
+class CH LARGE
+{
+public:
+	char pad_0x0000[0x50]; //0x0000
+	N0000490C* N0000484E; //0x0050 
+	N0000555C* N0000484F; //0x0058 
+char pad_0x0060[0x468]; //0x0060
+
+};//Size=0x04C8
+
+class N0000485E
+{
+public:
+	char pad_0x0000[0x18]; //0x0000
+	N00004871* N00004862; //0x0018 
+char pad_0x0020[0x68]; //0x0020
+
+};//Size=0x0088
+
+class N00004871
+{
+public:
+char pad_0x0000[0x14C8]; //0x0000
+
+};//Size=0x14C8
+
+class N0000490C
+{
+public:
+	char pad_0x0000[0x190]; //0x0000
+	N0000503E* N00004940; //0x0190 
+	char pad_0x0198[0xE8]; //0x0198
+	N0000498F* N0000495E; //0x0280 
+char pad_0x0288[0x3578]; //0x0288
+
+};//Size=0x3800
+
+class N0000498F
+{
+public:
+	N00004992* N00004990; //0x0000 
+
+};//Size=0x0008
+
+class N00004992
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N0000501D
+{
+public:
+	N0000502B* N0000501E; //0x0000 
+char pad_0x0008[0x38]; //0x0008
+
+};//Size=0x0040
+
+class N00005028
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N0000502B
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N0000503E
+{
+public:
+	N00005051* N0000503F; //0x0000 
+	N00005087* N00005040; //0x0008 
+	N0000506C* N00005041; //0x0010 
+	N000054FD* N00005042; //0x0018 
+	N00005508* N00005043; //0x0020 
+char pad_0x0028[0x148]; //0x0028
+
+};//Size=0x0170
+
+class N00005051
+{
+public:
+char pad_0x0000[0x188]; //0x0000
+
+};//Size=0x0188
+
+class N0000506C
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N00005087
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N0000509A
+{
+public:
+char pad_0x0000[0x80]; //0x0000
+
+};//Size=0x0080
+
+class N000050AD
+{
+public:
+	N000050C0* N000050AE; //0x0000 
+char pad_0x0008[0x80]; //0x0008
+
+};//Size=0x0088
+
+class N000050C0
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N000050E1
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N000050E6
+{
+public:
+	N000050E9* N000050E7; //0x0000 
+char pad_0x0008[0x100]; //0x0008
+
+};//Size=0x0108
+
+class N000050E9
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N00005124
+{
+public:
+	N0000513F* N00005125; //0x0000 
+char pad_0x0008[0xC0]; //0x0008
+
+};//Size=0x00C8
+
+class N0000513F
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N00005152
+{
+public:
+	N00005165* N00005153; //0x0000 
+char pad_0x0008[0x80]; //0x0008
+
+};//Size=0x0088
+
+class N00005165
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N000054FD
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N00005508
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N0000551B
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N0000552E
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N00005551
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class N0000555C
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class GameAIWeaponData
+{
+public:
+char pad_0x0000[0xC8]; //0x0000
+
+};//Size=0x00C8
+
+class N0000556C
+{
+public:
+char pad_0x0000[0x148]; //0x0000
+
+};//Size=0x0148
+
+class N000055E5
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+class PhysicsEntityTransform
+{
+public:
+	DirectX::XMMATRIX m_Transform; //0x0000 
+char pad_0x0040[0x8]; //0x0040
+
+};//Size=0x0048
+
+class VehicleHealthZoneData
+{
+public:
+	float m_MaxHealth; //0x0000 
+	float m_MaxShieldHealth; //0x0004 
+	float m_MinDamageAngle; //0x0008 
+	float m_DamageAngleMultiplier; //0x000C 
+	 m_DamageAngleMultiplierCurve; //0x0010 
+	float m_VerticalFactor; //0x0018 
+	BYTE m_UseDamageAngleCalculation; //0x001C 
+
+};//Size=0x001D
+
+class N000056CD
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N000056DA
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N000056DD
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N000056E0
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class N000056E3
+{
+public:
+char pad_0x0000[0x8]; //0x0000
+
+};//Size=0x0008
+
+class OFFSET_CURRENT_WEAPONFIRING
+{
+public:
+char pad_0x0000[0xC0]; //0x0000
+
+};//Size=0x00C0
+
+class N0000570F
+{
+public:
+char pad_0x0000[0x3C0]; //0x0000
+
+};//Size=0x03C0
+
+class N0000578C
+{
+public:
+char pad_0x0000[0x88]; //0x0000
+
+};//Size=0x0088
+
+class N0000579F
+{
+public:
+char pad_0x0000[0x48]; //0x0000
+
+};//Size=0x0048
+
+
