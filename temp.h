@@ -1,3 +1,5 @@
+Make damage negative to send a heal message and positive to act as magic bullets
+
 typedef void(__fastcall *tSendDamageData)(fb::ClientConnection *m_pClientConnection, fb::DamageData *m_pDamageData);
 tSendDamageData oSendDamageData = nullptr;
 
