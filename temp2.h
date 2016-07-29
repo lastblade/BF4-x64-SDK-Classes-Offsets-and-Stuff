@@ -1,6 +1,7 @@
-Make damage negative to send a heal message and positive to act as magic bullets
 
-And for teleport, all they did was add a lame check to see if your player exceeds 11 meters in any direction, such function is at 0x140F86090, 48 89 5C 24 ? 57 48 83 EC 60 80 79 58 00
+
+And for teleport, all they did was add a lame check to see if your player exceeds 11 meters in any direction, 
+such function is at 0x140F86090, 48 89 5C 24 ? 57 48 83 EC 60 80 79 58 00
 
 
 variables::dwTeleport[0] = 0x14037F255;//Tools::FindPattern(nullptr, reinterpret_cast<PBYTE>("\x48\x89\x79\x48\x89\x79\x50\x40\x88\x79\x54"), "xxxxxxxxxxx");
