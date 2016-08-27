@@ -7,7 +7,7 @@ BF4 Size: 0x293e000
 DebugRenderSettings= 0x1424ad490
 EnlightenRuntimeSettings = 0x1424ad480
 TextureStreamingSettings = 0x1424abe70
-SyncedBFSettings = 0x0
+SyncedBFSettings = 0x1421ac5a0
 MeshStreamingSettings = 0x1424abe68
 VisualTerrainSettings = 0x1425766b0
 EffectSystemSettings = 0x1424a3540
@@ -25,7 +25,7 @@ SSWidth = 0x14213674c
 SSHeight = 0x142136750
 BorderInput = 0x1424acf70
 VirtualFileSystem = 0x142149370
-Weapon = 0x0
+Weapon = 0x1421CAEE8
 ViewAngles = 0x1421caee0
 ServerMetricsSettings = 0x1421ac588
 ClientMetricsSettings = 0x1421c1b30
