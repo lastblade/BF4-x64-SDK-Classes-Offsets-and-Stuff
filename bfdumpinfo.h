@@ -48,6 +48,7 @@ SoundSettings = 0x1424ada50
 GameModeSettings = 0x1421b12d0
 DecalSettings = 0x1424abe58
 BFDedicatedServerSettings = 0x1421c7360
+BFServerSettings = 0x1427F3F10
 NetworkSettings = 0x0
 DemoSettings = 0x1421a00a8
 PhysicsSettings = 0x14249a4e8
